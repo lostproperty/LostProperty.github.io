@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Flat UI</title>
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" ng-app="tymify"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" ng-app="tymify"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" ng-app="tymify" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="tymify"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>LOST PROPERTY | We built Edge Tech Rock Solid Application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
     <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <link href="assets/css/flat-ui.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
@@ -19,88 +23,104 @@
     <![endif]-->
   </head>
   <body>
+<div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+        <div class="container ">
+            <!-- <a class="brand" href="/"></a> -->
+            <ul class="nav nav-pills pull-right">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid ">
+
+<div class="container-fluid primary">
+    <div class="container banner">
+        <img src="assets/images/logo_stack_light.png" />
+    </div>
+</div>
+
+<div class="container-fluid ">
     <div class="container">
-    
-<h1>Lost Property</h1>
-<p class="strapline">We create digital products</p>
-
-<ul class="nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
-
-<h2>Who we are</h2>
-<p>We are a team of experienced developers and technologists based in London who are passionate about crafting great digital products.</p>
-
-<h2>What we do</h2>
-<p>We provide <a href="services.html#tech-guidance">technical guidance</a>, digital product <a href="services.html#development">development</a> and <a href="services.html#hosting">hosting</a> solutions. Find out more about <a href="services.html">our services</a>.
-</p>
-
-<h2>Our Beliefs</h2>
-<ol>
-    <li>
-        <strong>Open.</strong> We believe in working in an open and transparent way. We are passionate about Open Source technologies and give back to the community whenever possible.<!-- ,by running meet-ups, contributing to and running Open Source projects. -->
-    </li>
-    <li>
-        <strong>Experience.</strong> you need great people to build great things. Our team is highly experienced in building digital products and platforms. We love beautifully simple user experiences provided by elegant technical solutions.
-        <!--
-        "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times." - Bruce Lee
-        -->
-    </li>
-    <li>
-        <strong>The Internet.</strong> As a platform the internet has transformed the way we live, work and play. We want to part of it's next stage of innovation.
-    </li>
-    <li>
-        <strong>Craft.</strong> Great products require create craftsmanship. We believe in choosing the right tools for the job, continually learning and refining our tool-set.
-        <!--
-        "The enjoyment of one's tools is an essential ingredient of successful work." - Donald Knuth
-        -->
-    </li>
-    <li>
-        <strong>Communication</strong> Cross-discipline collaboration with our clients and creative partners, is the key to making great products. Clear, honest communication is integral to the way we work.
-    </li>
-</ol>
-
-<p class="footer">
-    Lost Property | <a href="">Twitter</a><!-- read address --><!-- phone number --> | <a target="_launch" href="mailto:hello@thelostpropertybureau.com">hello@thelostpropertybureau.com</a>
-</p>
-
+        <h2>Who we are</h2>
+        <p>We are a team of experienced developers and technologists based in London who are passionate about crafting great digital products.</p>
+    </div>
+</div>
+<div class="container-fluid ">
+    <div class="container">
+    <h2 class="right">What we do</h2>
+    <p>We provide <a href="services.html#tech-guidance">technical guidance</a>, digital product <a href="services.html#development">development</a> and <a href="services.html#hosting">hosting</a> solutions. Find out more about <a href="services.html">our services</a>.
+    </p>
+  </div>
+</div>
+<div class="container-fluid ">
+    <div class="container">
+    <h2 class="center">Our Beliefs</h2>
+        <div class="row">
+            <div class="span9">
+            <h3>Open.</h3> We believe in working in an open and transparent way. We are passionate about Open Source technologies and give back to the community whenever possible.<!-- ,by running meet-ups, contributing to and running Open Source projects. -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="span9 offset3">
+            <h3>Experience.</h3> you need great people to build great things. Our team is highly experienced in building digital products and platforms. We love beautifully simple user experiences provided by elegant technical solutions.
+            <!--
+            "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times." - Bruce Lee
+            -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="span9 ">
+            <h3>The Internet.</h3> As a platform the internet has transformed the way we live, work and play. We want to part of it's next stage of innovation.
+            </div>
+        </div>
+        <div class="row">
+            <div class="span9  offset3">
+            <h3>Craft.</h3> Great products require create craftsmanship. We believe in choosing the right tools for the job, continually learning and refining our tool-set.
+            <!--
+            "The enjoyment of one's tools is an essential ingredient of successful work." - Donald Knuth
+            -->
+           </div>
+        </div>
+        <div class="row">
+            <div class="span9">
+            <h3>Communication</h3> Cross-discipline collaboration with our clients and creative partners, is the key to making great products. Clear, honest communication is integral to the way we work.
+          </div>
+        </div>
+    </ol>
+ </div>
+</div>
+   
     </div> <!-- /container -->
 
     <footer>
       <div class="container">
         <div class="row">
-          <div class="span7">
-            <h3 class="footer-title">Subscribe</h3>
-            <p>Do you like this freebie? Want to get more stuff like this?<br/>
-              Subscribe to designmodo news and updates to stay tuned on great designs.<br/>
-              Go to: <a href="http://designmodo.com/flat-free" target="_blank">designmodo.com/flat-free</a>
-            </p>
-
-            <p class="pvl">
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://designmodo.com/flat-free/" data-text="Flat UI Free - PSD&amp;HTML User Interface Kit" data-via="designmodo" data-size="large">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class="span7">
+            <h3 class="footer-title"></h3>
+            <p>Lost Property, a company made with developper love by developper.
             </p>
 
             <a class="footer-brand" href="http://designmodo.com" target="_blank">
-              <img src="images/footer/logo.png" alt="Designmodo.com" />
+              <img src="assets/images/logo_horizontal_light.png" alt="Lost Property HQ ltd" />
             </a>
           </div> <!-- /span8 -->
+         
 
           <div class="span5">
             <div class="footer-banner">
-              <h3 class="footer-title">Get Flat UI Pro</h3>
+              <h3 class="footer-title">Have Question?</h3>
               <ul>
-                <li>Tons of Basic and Custom UI Elements</li>
-                <li>A Lot of Useful Samples</li>
-                <li>More Vector Icons and Glyphs</li>
-                <li>Pro Color Swatches</li>
-                <li>Bootstrap Based HTML/CSS/JS Layout</li>
+                <li>Need help with your hosting</li>
+                <li>Want to have a chat</li>
+                <li>Need to make flight an helicopter</li>
+                <li>Break the internet?</li>
               </ul>
-              Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>
+              Contact us: <a target="_launch" href="mailto:hello@thelostpropertybureau.com">hello@thelostpropertybureau.com</a>
             </div>
           </div>
         </div>

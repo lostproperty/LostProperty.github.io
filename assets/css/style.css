@@ -1850,6 +1850,7 @@ footer p {
 }
 .navbar .nav > li > a {
   color: #ffffff;
+  font-weight: lighter;
 }
 .navbar .nav > li > a:hover {
   color: #f4d80b;

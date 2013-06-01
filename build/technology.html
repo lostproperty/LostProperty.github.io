@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Flat UI</title>
+<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" ng-app="tymify"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" ng-app="tymify"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" ng-app="tymify" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="tymify"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>LOST PROPERTY | We built Edge Tech Rock Solid Application</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
-    <link href="assets/css/flat-ui.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -19,17 +23,25 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-    <h1>Lost Property</h1>
-<p class="strapline">We create digital products</p>
+<div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+        <div class="container ">
+            
+            <a class="brand" href="/"></a>
+            
+            <ul class="nav nav-pills pull-right">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- container -->
+ 
+<div class="container">
 
-<ul class="nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
 
 <h2>Technologies</h2>
 
@@ -72,39 +84,34 @@
     <li>Unix tools: the classics never go out of style</li>
 </ul>
 
-    </div> <!-- /container -->
+    </div> 
+
+<!-- /container -->
 
     <footer>
       <div class="container">
         <div class="row">
-          <div class="span7">
-            <h3 class="footer-title">Subscribe</h3>
-            <p>Do you like this freebie? Want to get more stuff like this?<br/>
-              Subscribe to designmodo news and updates to stay tuned on great designs.<br/>
-              Go to: <a href="http://designmodo.com/flat-free" target="_blank">designmodo.com/flat-free</a>
+        <div class="span7">
+            <h3 class="footer-title"></h3>
+            <p>Lost Property, a company made with developper love by developper.
             </p>
-
-            <p class="pvl">
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://designmodo.com/flat-free/" data-text="Flat UI Free - PSD&amp;HTML User Interface Kit" data-via="designmodo" data-size="large">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </p>
-
-            <a class="footer-brand" href="http://designmodo.com" target="_blank">
-              <img src="images/footer/logo.png" alt="Designmodo.com" />
-            </a>
+ Contact us: <a target="_launch" href="mailto:hello@thelostpropertybureau.com">hello@thelostpropertybureau.com</a>
+            
           </div> <!-- /span8 -->
+         
 
           <div class="span5">
             <div class="footer-banner">
-              <h3 class="footer-title">Get Flat UI Pro</h3>
+              <h3 class="footer-title">Have Question?</h3>
               <ul>
-                <li>Tons of Basic and Custom UI Elements</li>
-                <li>A Lot of Useful Samples</li>
-                <li>More Vector Icons and Glyphs</li>
-                <li>Pro Color Swatches</li>
-                <li>Bootstrap Based HTML/CSS/JS Layout</li>
+                <li>Need help with your hosting</li>
+                <li>Want to have a chat</li>
+                <li>Need to make flight an helicopter</li>
+                <li>Break the internet?</li>
               </ul>
-              Go to: <a href="http://designmodo.com/flat" target="_blank">designmodo.com/flat</a>
+             <a class="footer-brand" href="http://designmodo.com" target="_blank">
+              <img src="static/images/logo_horizontal_light.png" alt="Lost Property HQ ltd" />
+            </a>
             </div>
           </div>
         </div>
@@ -112,9 +119,9 @@
     </footer>
     
     <!-- Load JS here for greater good =============================-->
-    <script src="assets/js/jquery-1.8.3.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.placeholder.js"></script>
-    <script src="assets/js/jquery.stacktable.js"></script>
+    <script src="static/js/jquery-1.8.3.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.placeholder.js"></script>
+    <script src="static/js/jquery.stacktable.js"></script>
   </body>
 </html>

@@ -1,0 +1,89 @@
+@import "flat_ui/flat-ui";
+
+@white:      #fff;
+@yellow: 	 #F4D80B;
+@magento:    #D71C53;
+@cool_grey:  #F0F0F0;
+
+.navbar-inner{
+	box-shadow:none !important;
+	background-color: @magento;
+}
+
+.navbar .brand{
+	box-shadow:none !important;
+	width:270px;
+	background: url("../images/logo_horizontal_light.png") no-repeat scroll center top transparent;
+	padding: 0;
+	height:55px;
+	border-radius:0;
+	margin-top:10px;
+}
+
+.navbar .nav > li > a {
+	color: @white;
+	font-weight: lighter;
+	&:hover{
+	    color: @yellow;
+	}
+}
+
+body {
+    background-color: #F0F0F0;
+	font-size: 20px;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+	font-weight: lighter;
+	line-height: 50px;
+	&.right {
+	text-align:right;
+	}
+	&.center {
+	text-align:center;
+	}
+
+}
+
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-style: italic;
+}
+
+.container-fluid.primary {
+	background-color: @magento;
+	color: @white;
+}
+
+.container-fluid.secondary {
+	background-color: @yellow;
+}
+
+.banner{
+	text-align: center;
+	padding: 20px;
+}
+
+li {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.container-fluid{
+	padding:0;
+}
+
+[class*="offset"] h3 {
+	text-align:right;
+}
+footer {
+ background-color : none;	
+}
+
+.footer-banner a {
+    margin: auto;
+}

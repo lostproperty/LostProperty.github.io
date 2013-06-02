@@ -1,0 +1,2 @@
+recursive-include lostproperty/templates *
+recursive-include lostproperty/static *

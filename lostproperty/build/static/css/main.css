@@ -1,0 +1,477 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Gabriela);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+body {
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/* ==========================================================================
+   Google font
+   ========================================================================== */
+/* ==========================================================================
+   IcoMoon - Icon font
+   ========================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-envelope, .icon-twitter {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+.icon-envelope:before {
+  content: "\e000"; }
+
+.icon-twitter:before {
+  content: "\e001"; }
+
+h1, h2 {
+  font-family: 'Gabriela', serif;
+  font-weight: normal; }
+
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 24px; }
+
+hr {
+  width: 30px;
+  margin: auto; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+header[role="banner"] {
+  background: none repeat scroll 0 0 #af1d4c;
+  height: 88px;
+  width: 100%; }
+  header[role="banner"] .header-container {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+    header[role="banner"] .header-container:before, header[role="banner"] .header-container:after {
+      content: " ";
+      display: table; }
+    header[role="banner"] .header-container:after {
+      clear: both; }
+    header[role="banner"] .header-container .logo-container {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      header[role="banner"] .header-container .logo-container:last-child {
+        margin-right: 0; }
+    header[role="banner"] .header-container .menu-container {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      header[role="banner"] .header-container .menu-container:last-child {
+        margin-right: 0; }
+
+ul#menu-top-nav {
+  list-style-type: none;
+  margin-top: 30px;
+  padding: 0; }
+  ul#menu-top-nav li {
+    display: inline;
+    float: right;
+    margin-left: 30px; }
+    ul#menu-top-nav li a {
+      color: #d78ea6;
+      text-decoration: none;
+      font-size: 24px; }
+      ul#menu-top-nav li a:hover {
+        color: white; }
+
+header hgroup h1 {
+  background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  height: 40px;
+  text-indent: -9999em;
+  margin: 0; }
+
+header hgroup {
+  margin: 0;
+  padding-top: 24px;
+  width: 205px; }
+
+.tagline-wrapper {
+  background-color: #d71c53;
+  height: 255px; }
+
+.intro-wrapper {
+  background-color: white;
+  min-height: 255px; }
+
+.work-wrapper {
+  background-color: #f0f0f0;
+  min-height: 250px; }
+
+.contact-wrapper {
+  background-color: #d71c53;
+  min-height: 190px;
+  color: white; }
+
+footer {
+  background-color: #af1d4c;
+  min-height: 55px;
+  color: #d78ea6; }
+
+.tagline-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .tagline-container:before, .tagline-container:after {
+    content: " ";
+    display: table; }
+  .tagline-container:after {
+    clear: both; }
+  .tagline-container .tagline {
+    padding-top: 60px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 34.11922%;
+    text-align: center;
+    color: white; }
+    .tagline-container .tagline:last-child {
+      margin-right: 0; }
+
+.intro-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .intro-container:before, .intro-container:after {
+    content: " ";
+    display: table; }
+  .intro-container:after {
+    clear: both; }
+  .intro-container .who-are-we {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding-top: 45px;
+    text-align: center; }
+    .intro-container .who-are-we:last-child {
+      margin-right: 0; }
+  .intro-container .collaboration {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding-top: 45px;
+    text-align: center; }
+    .intro-container .collaboration:last-child {
+      margin-right: 0; }
+
+.work-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .work-container:before, .work-container:after {
+    content: " ";
+    display: table; }
+  .work-container:after {
+    clear: both; }
+  .work-container .work {
+    padding-top: 45px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 25.58941%;
+    text-align: center; }
+    .work-container .work:last-child {
+      margin-right: 0; }
+
+.clients-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .clients-container:before, .clients-container:after {
+    content: " ";
+    display: table; }
+  .clients-container:after {
+    clear: both; }
+  .clients-container .clients {
+    padding-top: 25px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 100%;
+    text-align: center; }
+    .clients-container .clients:last-child {
+      margin-right: 0; }
+  .clients-container ul {
+    list-style-type: none; }
+    .clients-container ul li {
+      display: inline; }
+
+.belief-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .belief-container:before, .belief-container:after {
+    content: " ";
+    display: table; }
+  .belief-container:after {
+    clear: both; }
+  .belief-container .belief {
+    padding-top: 45px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    text-align: center; }
+    .belief-container .belief:last-child {
+      margin-right: 0; }
+
+.contact-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .contact-container:before, .contact-container:after {
+    content: " ";
+    display: table; }
+  .contact-container:after {
+    clear: both; }
+  .contact-container .twitter-contact {
+    padding-top: 60px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 17.05961%;
+    text-align: center; }
+    .contact-container .twitter-contact:last-child {
+      margin-right: 0; }
+  .contact-container .mail-contact {
+    padding-top: 60px;
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    text-align: center; }
+    .contact-container .mail-contact:last-child {
+      margin-right: 0; }
+
+.footer-container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  .footer-container:before, .footer-container:after {
+    content: " ";
+    display: table; }
+  .footer-container:after {
+    clear: both; }
+  .footer-container .company-registration {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+    text-align: center; }
+    .footer-container .company-registration:last-child {
+      margin-right: 0; }

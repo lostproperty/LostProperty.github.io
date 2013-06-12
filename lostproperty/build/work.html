@@ -1,45 +1,80 @@
+
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" ng-app="tymify"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" ng-app="tymify"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" ng-app="tymify" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" ng-app="tymify"> <!--<![endif]-->
-<head>
-    <meta charset="utf-8" />
-    <title>LOST PROPERTY | We built Edge Tech Rock Solid Application</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>LOST PROPERTY | XXXXXXXXXXX</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width">
 
-    <!-- Loading Bootstrap -->
-    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- social google tags --> 
 
-    <!-- Loading Flat UI -->
-    <link href="static/css/style.css" rel="stylesheet">
+        <meta itemprop="name" content="Lost property">
+        <meta itemprop="description" content="description">
+        <meta itemprop="image" content="logo.png">
 
-    <link rel="shortcut icon" href="static/images/favicon.ico">
+        <!-- social opengraph (facebook) tags --> 
+        <meta property="og:title" content="..." />
+        <meta property="og:image" content="..." />
+        <meta property="og:description" content="..." />
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-<div class="navbar navbar-static-top">
-    <div class="navbar-inner">
-        <div class="container ">
-            
-            <a class="brand" href="/"></a>
-            
-            <ul class="nav nav-pills pull-right">
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- container -->
- 
+        <!-- style -->
+        <link rel="stylesheet" href="static/css/normalize.min.css">
+        <link rel="stylesheet" href="static/css/main.css">
+        <!-- icons -->
+        <link rel="shortcut icon" href="static/images/icons/favicon.ico">
+        <link rel="apple-touch-icon" href="static/images/icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="static/images/icons/apple-touch-icon-72x72-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="static/images/icons/apple-touch-icon-114x114-precomposed.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="static/images/icons/apple-touch-icon-144x144-precomposed.png" />
+
+        <!-- scripts -->
+        <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!--[if lte IE 7]><script src="static/js/lte-ie7.js"></script><![endif]-->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+      
+        <header role="banner">
+           
+                <div class="header-container">
+                    <div class="logo-container">
+                    <hgroup>
+                         <a href="/" rel="home">
+                            <h1>Lost Property</h1>
+                        </a>
+                     </hgroup><!-- end hgroup -->
+                    </div>
+                    <!-- wrapper div for Firefox 3.x ref: http://01i.jp/html5bll -->
+                    <div class="menu-container">
+                    <ul id="menu-top-nav" >
+                            <li id="menu-item-mail" >
+
+                                <a href="maito:hello@lostpropertyhq.com">
+                                    <span class="icon-envelope" aria-hidden="true"></span>
+                                    <span class="visuallyhidden">Mail</span><!-- accessibility -->
+                                </a>
+                            </li>
+                             <li id="menu-item-twitter">
+                                 <a href="maito:hello@lostpropertyhq.com">
+                                    <span class="icon-twitter" aria-hidden="true"></span>
+                                    <span class="visuallyhidden">Mail</span><!-- accessibility -->
+                                </a>
+                            </li>
+                    </ul>     
+                    <!-- end #top-nav -->
+                    </div>
+               </div>
+        </header>
+        
    <div class="container">
     <h2>Our Work</h2>
 
@@ -47,42 +82,26 @@
     </div> <!-- /container -->
 
 
-<!-- /container -->
 
-    <footer>
-      <div class="container">
-        <div class="row">
-        <div class="span7">
-            <h3 class="footer-title"></h3>
-            <p>Lost Property, a company made with developper love by developper.
-            </p>
- Contact us: <a target="_launch" href="mailto:hello@thelostpropertybureau.com">hello@thelostpropertybureau.com</a>
-            
-          </div> <!-- /span8 -->
-         
-
-          <div class="span5">
-            <div class="footer-banner">
-              <h3 class="footer-title">Have Question?</h3>
-              <ul>
-                <li>Need help with your hosting</li>
-                <li>Want to have a chat</li>
-                <li>Need to make flight an helicopter</li>
-                <li>Break the internet?</li>
-              </ul>
-             <a class="footer-brand" href="http://designmodo.com" target="_blank">
-              <img src="static/images/logo_horizontal_light.png" alt="Lost Property HQ ltd" />
-            </a>
+        <footer>
+            <div class="footer-container">
+                <div class="company-registration">
+                <p>Lost Property Bureau Limited is a company registered in England and Wales. 
+                    Registered no. 123456.  VAT Registration No 802 3968 33 </p>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-    <!-- Load JS here for greater good =============================-->
-    <script src="static/js/jquery-1.8.3.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/jquery.placeholder.js"></script>
-    <script src="static/js/jquery.stacktable.js"></script>
-  </body>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>

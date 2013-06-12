@@ -1,0 +1,205 @@
+@import "bourbon/bourbon";
+@import "grid-settings";
+@import "neat/neat";
+@import "h5bp";
+@import "fonts";
+
+$visual-grid: true;
+
+$dark_magento: #af1d4c;
+$light_magento: #d71c53;
+$magento_shade: #d78ea6;
+$white: #ffffff;
+$light_grey: #f0f0f0;
+
+h1,h2 {
+	font-family: 'Gabriela', serif;	
+	font-weight: normal;
+}
+
+h1{
+	font-size:32px;
+}
+
+h2{
+	font-size:24px;
+}
+
+hr {
+	 	width: 30px;
+		margin: auto;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header[role="banner"] {
+    background: none repeat scroll 0 0 $dark_magento;
+    height: 88px;
+    width: 100%;
+
+    .header-container {
+    	 @include outer-container;
+
+    	 .logo-container{
+ 			@include span-columns(6);
+    	 }
+    	 .menu-container{
+    	  	@include span-columns(6);
+    	 }
+    }
+   
+}
+
+
+ul#menu-top-nav{
+	list-style-type:none;
+	margin-top:30px;
+	padding:0;
+	
+	li {
+		display:inline;
+		float: right;
+		margin-left:30px;
+		a{
+		color : $magento_shade;
+		text-decoration : none;
+		font-size : 24px;
+		  &:hover{
+		  	color : $white;
+
+		  }
+		}
+	}
+}
+
+
+header hgroup h1 {
+    background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 40px;
+    text-indent: -9999em;
+    margin:0;
+}
+
+header hgroup {
+    margin: 0;
+    padding-top: 24px;
+    width: 205px;
+}
+
+.tagline-wrapper {
+	background-color: $light_magento;
+    height: 255px;
+}
+
+.intro-wrapper {
+	background-color: $white;
+    min-height: 255px;
+}
+
+.work-wrapper {
+	background-color: $light_grey;
+    min-height: 250px;
+}
+
+.contact-wrapper {
+	background-color: $light_magento;
+    min-height: 190px;
+    color : $white;
+}
+
+footer {
+    background-color: $dark_magento;
+	min-height: 55px;
+	color : $magento_shade;
+}
+
+.tagline-container{
+	 @include outer-container;
+	 .tagline{
+	     padding-top:60px;
+		 @include span-columns(4);
+		 @include shift(4);
+		 text-align:center;
+		 color: $white;
+	 }
+}
+
+.intro-container{
+	 @include outer-container;
+	 .who-are-we{
+		 @include span-columns(6);
+		 padding-top:45px;
+		 text-align:center;
+	 }
+	 .collaboration{
+		 @include span-columns(6);
+		 padding-top:45px;
+		 text-align:center;
+	 }
+
+}
+
+.work-container{
+	 @include outer-container;
+	 .work{
+	     padding-top:45px;
+		 @include span-columns(6);
+		 @include shift(3);
+		 text-align:center;
+	 }
+}
+
+.clients-container{
+	 @include outer-container;
+	 .clients{
+	     padding-top:25px;
+		 @include span-columns(12);
+		 text-align:center;
+	 }
+
+	 ul{
+		list-style-type:none;
+		li {
+			display:inline;
+		}
+	}
+}
+.belief-container{
+	 @include outer-container;
+	 .belief {
+	     padding-top:45px;
+		 @include span-columns(10);
+		 @include shift(1);
+		 text-align:center;
+	 }
+}
+.contact-container{
+	 @include outer-container;
+	 .twitter-contact {
+	     padding-top:60px;
+		 @include span-columns(4);
+		 @include shift(2);
+		 text-align:center;
+	 }
+	  .mail-contact {
+	     padding-top:60px;
+		 @include span-columns(4);
+		 text-align:center;
+	 }
+}
+
+.footer-container{
+	 @include outer-container;
+	 .company-registration {
+		 @include span-columns(8);
+		 @include shift(2);
+		 text-align:center;
+	 }
+}
+
+

@@ -482,7 +482,9 @@ footer {
   .clients-container ul {
     list-style-type: none; }
     .clients-container ul li {
-      display: inline; }
+      display: inline-table;
+      margin-bottom: 20px;
+      padding: 0 10px; }
 
 .belief-container {
   *zoom: 1;

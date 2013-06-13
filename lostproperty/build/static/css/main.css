@@ -234,7 +234,8 @@ body {
 header[role="banner"] {
   background: none repeat scroll 0 0 #af1d4c;
   height: 88px;
-  width: 100%; }
+  width: 100%;
+  padding: 0 10px; }
   header[role="banner"] .header-container {
     *zoom: 1;
     max-width: 960px;
@@ -342,23 +343,43 @@ footer {
   .intro-container:after {
     clear: both; }
   .intro-container .who-are-we {
-    display: block;
-    float: left;
-    margin-right: 2.35765%;
-    width: 48.82117%;
     padding-top: 45px;
     text-align: center; }
-    .intro-container .who-are-we:last-child {
-      margin-right: 0; }
+    @media screen and (max-width: 767px) {
+      .intro-container .who-are-we {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .intro-container .who-are-we:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+      .intro-container .who-are-we {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .intro-container .who-are-we:last-child {
+          margin-right: 0; } }
   .intro-container .collaboration {
-    display: block;
-    float: left;
-    margin-right: 2.35765%;
-    width: 48.82117%;
     padding-top: 45px;
     text-align: center; }
-    .intro-container .collaboration:last-child {
-      margin-right: 0; }
+    @media screen and (max-width: 767px) {
+      .intro-container .collaboration {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .intro-container .collaboration:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+      .intro-container .collaboration {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .intro-container .collaboration:last-child {
+          margin-right: 0; } }
 
 .work-container {
   *zoom: 1;
@@ -438,14 +459,24 @@ footer {
     clear: both; }
   .contact-container .twitter-contact {
     padding-top: 60px;
-    display: block;
-    float: left;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 17.05961%;
     text-align: center; }
-    .contact-container .twitter-contact:last-child {
-      margin-right: 0; }
+    @media screen and (max-width: 767px) {
+      .contact-container .twitter-contact {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .contact-container .twitter-contact:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+      .contact-container .twitter-contact {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-left: 17.05961%; }
+        .contact-container .twitter-contact:last-child {
+          margin-right: 0; } }
   .contact-container .mail-contact {
     padding-top: 60px;
     display: block;
@@ -453,6 +484,22 @@ footer {
     margin-right: 2.35765%;
     width: 31.76157%;
     text-align: center; }
+    @media screen and (max-width: 767px) {
+      .contact-container .mail-contact {
+        display: block;
+        float: left;
+        margin-right: 7.42297%;
+        width: 100%; }
+        .contact-container .mail-contact:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 768px) {
+      .contact-container .mail-contact {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .contact-container .mail-contact:last-child {
+          margin-right: 0; } }
     .contact-container .mail-contact:last-child {
       margin-right: 0; }
 

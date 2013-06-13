@@ -13,4 +13,15 @@ python application.py
 ```
 Site will be running on http://127.0.0.1:5000/
 
+### Frontend
+
+For frontend development we use SaSS with Bourbon Neat http://neat.bourbon.io/. To install
+`sudo gem install sass`
+
+To compile the css
+```
+cd lostproperty/static/sass
+sass --watch main.scss:../css/main.css
+```
+
 ## Deploying

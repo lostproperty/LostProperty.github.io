@@ -25,6 +25,11 @@ h2{
 	font-size:24px;
 }
 
+h3{
+	font-weight:700;
+	margin-bottom:0;
+}
+
 hr {
 	 	width: 30px;
 		margin: auto;
@@ -195,6 +200,9 @@ footer {
 		 @include span-columns(10);
 		 @include shift(1);
 		 text-align:center;
+		 p {
+		   margin-top : 0.2em;
+		 }
 	 }
 }
 .contact-container{

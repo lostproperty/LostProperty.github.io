@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato|Gabriela);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Gabriela);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -221,6 +221,10 @@ h1 {
 
 h2 {
   font-size: 24px; }
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 0; }
 
 hr {
   width: 30px;
@@ -456,6 +460,8 @@ footer {
     text-align: center; }
     .belief-container .belief:last-child {
       margin-right: 0; }
+    .belief-container .belief p {
+      margin-top: 0.2em; }
 
 .contact-container {
   *zoom: 1;

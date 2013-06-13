@@ -296,10 +296,6 @@ header hgroup {
   background-color: #d71c53;
   height: 255px; }
 
-.intro-wrapper {
-  background-color: white;
-  min-height: 255px; }
-
 .work-wrapper {
   background-color: #f0f0f0;
   min-height: 250px; }
@@ -346,6 +342,10 @@ footer {
         .tagline-container .tagline:last-child {
           margin-right: 0; } }
 
+.intro-wrapper {
+  background-color: white;
+  min-height: 255px; }
+
 .intro-container {
   *zoom: 1;
   max-width: 960px;
@@ -383,7 +383,8 @@ footer {
         display: block;
         float: left;
         margin-right: 7.42297%;
-        width: 100%; }
+        width: 100%;
+        margin-right: 0; }
         .intro-container .collaboration:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -391,7 +392,8 @@ footer {
         display: block;
         float: left;
         margin-right: 2.35765%;
-        width: 48.82117%; }
+        width: 48.82117%;
+        margin-right: 0; }
         .intro-container .collaboration:last-child {
           margin-right: 0; } }
   .intro-container .build-with-care {

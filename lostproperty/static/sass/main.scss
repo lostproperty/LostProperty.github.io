@@ -101,10 +101,7 @@ header hgroup {
     height: 255px;
 }
 
-.intro-wrapper {
-    background-color: $white;
-    min-height: 255px;
-}
+
 
 .work-wrapper {
     background-color: $light_grey;
@@ -141,49 +138,59 @@ footer {
      }
 }
 
+.intro-wrapper {
+    background-color: $white;
+    min-height: 255px;
+    
+}
 .intro-container{
-     @include outer-container;
-     .who-are-we{
-         @include breakpoint($mobile) {
+    @include outer-container;
+
+     .who-are-we{    
+         padding-top:45px;
+         text-align:center;
+          @include breakpoint($mobile) {
             @include span-columns(4);
           }
           @include breakpoint($desktop) {
             @include span-columns(6);
           }
-
-         padding-top:45px;
-         text-align:center;
      }
      .collaboration{
-         @include breakpoint($mobile) {
-            @include span-columns(4);
-          }
-          @include breakpoint($desktop) {
-            @include span-columns(6);
-          }
-
          padding-top:45px;
          text-align:center;
+          @include breakpoint($mobile) {
+            @include span-columns(4);
+            @include omega;
+          }
+          @include breakpoint($desktop) {
+            @include span-columns(6);
+            @include omega;
+            
+          }
+
      }
+   
+
      .build-with-care{
-         @include breakpoint($mobile) {
+         text-align:center;
+          @include breakpoint($mobile) {
             @include span-columns(4);
           }
           @include breakpoint($desktop) {
             @include span-columns(6);
           }
-
-         text-align:center;
+         
      }
      .guidance{
-         @include breakpoint($mobile) {
+         text-align:center;
+          @include breakpoint($mobile) {
             @include span-columns(4);
           }
           @include breakpoint($desktop) {
             @include span-columns(6);
           }
-
-         text-align:center;
+         
      }
 
 }

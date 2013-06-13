@@ -25,6 +25,11 @@ h2{
 	font-size:24px;
 }
 
+h3{
+	font-weight:700;
+	margin-bottom:0;
+}
+
 hr {
 	 	width: 30px;
 		margin: auto;
@@ -40,7 +45,7 @@ header[role="banner"] {
     background: none repeat scroll 0 0 $dark_magento;
     height: 88px;
     width: 100%;
-
+    padding: 0 10px;
     .header-container {
     	 @include outer-container;
 
@@ -121,9 +126,16 @@ footer {
 .tagline-container{
 	 @include outer-container;
 	 .tagline{
-	     padding-top:60px;
-		 @include span-columns(4);
-		 @include shift(4);
+	     
+	 	 padding-top:60px;
+	     @include breakpoint($mobile) {
+	      @include span-columns(4);
+	     }
+	     @include breakpoint($desktop) {
+		     @include span-columns(4);
+		     @include shift(4);
+			   
+		  }
 		 text-align:center;
 		 color: $white;
 	 }
@@ -132,12 +144,24 @@ footer {
 .intro-container{
 	 @include outer-container;
 	 .who-are-we{
-		 @include span-columns(6);
+	     @include breakpoint($mobile) {
+		    @include span-columns(4);
+		  }
+		  @include breakpoint($desktop) {
+		    @include span-columns(6);
+		  }
+		 
 		 padding-top:45px;
 		 text-align:center;
 	 }
 	 .collaboration{
-		 @include span-columns(6);
+	     @include breakpoint($mobile) {
+		    @include span-columns(4);
+		  }
+		  @include breakpoint($desktop) {
+		    @include span-columns(6);
+		  }
+		 
 		 padding-top:45px;
 		 text-align:center;
 	 }
@@ -176,17 +200,34 @@ footer {
 		 @include span-columns(10);
 		 @include shift(1);
 		 text-align:center;
+		 p {
+		   margin-top : 0.2em;
+		 }
 	 }
 }
 .contact-container{
 	 @include outer-container;
 	 .twitter-contact {
 	     padding-top:60px;
-		 @include span-columns(4);
-		 @include shift(2);
+	     @include breakpoint($mobile) {
+		    @include span-columns(4);
+		  }
+		  @include breakpoint($desktop) {
+		    @include span-columns(4);
+		    @include shift(2);
+		  }
+		 
+		 
 		 text-align:center;
 	 }
 	  .mail-contact {
+	  	  @include breakpoint($mobile) {
+		    @include span-columns(4);
+		  }
+		  @include breakpoint($desktop) {
+		    @include span-columns(4);
+		  }
+		 
 	     padding-top:60px;
 		 @include span-columns(4);
 		 text-align:center;

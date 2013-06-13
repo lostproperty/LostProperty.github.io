@@ -17,6 +17,14 @@ h1,h2 {
     font-weight: normal;
 }
 
+a {
+    text-decoration: none;
+    color: $dark_magento;
+    &:hover{
+        color: $light_magento;
+    }
+}
+
 h1{
     font-size:32px;
 }

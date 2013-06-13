@@ -216,6 +216,12 @@ h1, h2 {
   font-family: 'Gabriela', serif;
   font-weight: normal; }
 
+a {
+  text-decoration: none;
+  color: #af1d4c; }
+  a:hover {
+    color: #d71c53; }
+
 h1 {
   font-size: 32px; }
 

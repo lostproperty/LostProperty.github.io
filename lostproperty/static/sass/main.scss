@@ -13,30 +13,30 @@ $white: #ffffff;
 $light_grey: #f0f0f0;
 
 h1,h2 {
-	font-family: 'Gabriela', serif;	
-	font-weight: normal;
+    font-family: 'Gabriela', serif;
+    font-weight: normal;
 }
 
 h1{
-	font-size:32px;
+    font-size:32px;
 }
 
 h2{
-	font-size:24px;
+    font-size:24px;
 }
 
 h3{
-	font-weight:700;
-	margin-bottom:0;
+    font-weight:700;
+    margin-bottom:0;
 }
 
 hr {
-	 	width: 30px;
-		margin: auto;
+        width: 30px;
+        margin: auto;
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -47,38 +47,38 @@ header[role="banner"] {
     width: 100%;
     padding: 0 10px;
     .header-container {
-    	 @include outer-container;
+         @include outer-container;
 
-    	 .logo-container{
- 			@include span-columns(6);
-    	 }
-    	 .menu-container{
-    	  	@include span-columns(6);
-    	 }
+         .logo-container{
+            @include span-columns(6);
+         }
+         .menu-container{
+            @include span-columns(6);
+         }
     }
-   
+
 }
 
 
 ul#menu-top-nav{
-	list-style-type:none;
-	margin-top:30px;
-	padding:0;
-	
-	li {
-		display:inline;
-		float: right;
-		margin-left:30px;
-		a{
-		color : $magento_shade;
-		text-decoration : none;
-		font-size : 24px;
-		  &:hover{
-		  	color : $white;
+    list-style-type:none;
+    margin-top:30px;
+    padding:0;
 
-		  }
-		}
-	}
+    li {
+        display:inline;
+        float: right;
+        margin-left:30px;
+        a{
+        color : $magento_shade;
+        text-decoration : none;
+        font-size : 24px;
+          &:hover{
+            color : $white;
+
+          }
+        }
+    }
 }
 
 
@@ -97,150 +97,173 @@ header hgroup {
 }
 
 .tagline-wrapper {
-	background-color: $light_magento;
+    background-color: $light_magento;
     height: 255px;
 }
 
 .intro-wrapper {
-	background-color: $white;
+    background-color: $white;
     min-height: 255px;
 }
 
 .work-wrapper {
-	background-color: $light_grey;
+    background-color: $light_grey;
     min-height: 250px;
 }
 
 .contact-wrapper {
-	background-color: $light_magento;
+    background-color: $light_magento;
     min-height: 190px;
     color : $white;
 }
 
 footer {
     background-color: $dark_magento;
-	min-height: 55px;
-	color : $magento_shade;
+    min-height: 55px;
+    color : $magento_shade;
 }
 
 .tagline-container{
-	 @include outer-container;
-	 .tagline{
-	     
-	 	 padding-top:60px;
-	     @include breakpoint($mobile) {
-	      @include span-columns(4);
-	     }
-	     @include breakpoint($desktop) {
-		     @include span-columns(4);
-		     @include shift(4);
-			   
-		  }
-		 text-align:center;
-		 color: $white;
-	 }
+     @include outer-container;
+     .tagline{
+
+         padding-top:60px;
+         @include breakpoint($mobile) {
+          @include span-columns(4);
+         }
+         @include breakpoint($desktop) {
+             @include span-columns(4);
+             @include shift(4);
+
+          }
+         text-align:center;
+         color: $white;
+     }
 }
 
 .intro-container{
-	 @include outer-container;
-	 .who-are-we{
-	     @include breakpoint($mobile) {
-		    @include span-columns(4);
-		  }
-		  @include breakpoint($desktop) {
-		    @include span-columns(6);
-		  }
-		 
-		 padding-top:45px;
-		 text-align:center;
-	 }
-	 .collaboration{
-	     @include breakpoint($mobile) {
-		    @include span-columns(4);
-		  }
-		  @include breakpoint($desktop) {
-		    @include span-columns(6);
-		  }
-		 
-		 padding-top:45px;
-		 text-align:center;
-	 }
+     @include outer-container;
+     .who-are-we{
+         @include breakpoint($mobile) {
+            @include span-columns(4);
+          }
+          @include breakpoint($desktop) {
+            @include span-columns(6);
+          }
+
+         padding-top:45px;
+         text-align:center;
+     }
+     .collaboration{
+         @include breakpoint($mobile) {
+            @include span-columns(4);
+          }
+          @include breakpoint($desktop) {
+            @include span-columns(6);
+          }
+
+         padding-top:45px;
+         text-align:center;
+     }
+     .build-with-care{
+         @include breakpoint($mobile) {
+            @include span-columns(4);
+          }
+          @include breakpoint($desktop) {
+            @include span-columns(6);
+          }
+
+         text-align:center;
+     }
+     .guidance{
+         @include breakpoint($mobile) {
+            @include span-columns(4);
+          }
+          @include breakpoint($desktop) {
+            @include span-columns(6);
+          }
+
+         text-align:center;
+     }
 
 }
 
 .work-container{
-	 @include outer-container;
-	 .work{
-	     padding-top:45px;
-		 @include span-columns(6);
-		 @include shift(3);
-		 text-align:center;
-	 }
+     @include outer-container;
+     .work{
+         padding-top:45px;
+         @include span-columns(6);
+         @include shift(3);
+         text-align:center;
+     }
 }
 
 .clients-container{
-	 @include outer-container;
-	 .clients{
-	     padding-top:25px;
-		 @include span-columns(12);
-		 text-align:center;
-	 }
+     @include outer-container;
+     .clients{
+         padding-top:25px;
+         @include span-columns(12);
+         text-align:center;
+     }
 
-	 ul{
-		list-style-type:none;
-		li {
-			display:inline;
-		}
-	}
+     ul{
+        list-style-type:none;
+        li {
+            display:inline;
+        }
+    }
 }
 .belief-container{
-	 @include outer-container;
-	 .belief {
-	     padding-top:45px;
-		 @include span-columns(10);
-		 @include shift(1);
-		 text-align:center;
-		 p {
-		   margin-top : 0.2em;
-		 }
-	 }
+     @include outer-container;
+     .belief {
+         padding-top:45px;
+         @include span-columns(10);
+         @include shift(1);
+         text-align:center;
+         p {
+           margin-top : 0.2em;
+         }
+     }
 }
 .contact-container{
-	 @include outer-container;
-	 .twitter-contact {
-	     padding-top:60px;
-	     @include breakpoint($mobile) {
-		    @include span-columns(4);
-		  }
-		  @include breakpoint($desktop) {
-		    @include span-columns(4);
-		    @include shift(2);
-		  }
-		 
-		 
-		 text-align:center;
-	 }
-	  .mail-contact {
-	  	  @include breakpoint($mobile) {
-		    @include span-columns(4);
-		  }
-		  @include breakpoint($desktop) {
-		    @include span-columns(4);
-		  }
-		 
-	     padding-top:60px;
-		 @include span-columns(4);
-		 text-align:center;
-	 }
+     @include outer-container;
+     .twitter-contact {
+         padding-top:60px;
+         @include breakpoint($mobile) {
+            @include span-columns(4);
+          }
+          @include breakpoint($desktop) {
+            @include span-columns(4);
+            @include shift(2);
+          }
+
+
+         text-align:center;
+     }
+      .mail-contact {
+          @include breakpoint($mobile) {
+            @include span-columns(4);
+          }
+          @include breakpoint($desktop) {
+            @include span-columns(4);
+          }
+
+         padding-top:60px;
+         @include span-columns(4);
+         text-align:center;
+     }
+     a {
+       color : $white;
+     }
 }
 
 .footer-container{
-	 @include outer-container;
-	 .company-registration {
-		 @include span-columns(8);
-		 @include shift(2);
-		 text-align:center;
-	 }
+     @include outer-container;
+     .company-registration {
+         @include span-columns(8);
+         @include shift(2);
+         text-align:center;
+     }
 }
 
 

@@ -480,6 +480,7 @@ footer {
     .clients-container .clients:last-child {
       margin-right: 0; }
   .clients-container ul {
+    padding: 0;
     list-style-type: none; }
     .clients-container ul li {
       display: inline-table;

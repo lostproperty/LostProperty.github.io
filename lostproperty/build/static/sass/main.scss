@@ -67,6 +67,23 @@ header[role="banner"] {
 
 }
 
+.heart-container{
+    /* TODO: center without width check technique when I have internet connection */
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+
+.heart-container pre{
+    font-family:courier;
+    font-size: 11px; text-align:left;
+    line-height: 1.0;
+    margin: 0;
+}
+
+.hide{
+    display: none;
+}
 
 ul#menu-top-nav{
     list-style-type:none;
@@ -149,12 +166,12 @@ footer {
 .intro-wrapper {
     background-color: $white;
     min-height: 255px;
-    
+
 }
 .intro-container{
     @include outer-container;
 
-     .who-are-we{    
+     .who-are-we{
          padding-top:45px;
          text-align:center;
           @include breakpoint($mobile) {
@@ -174,11 +191,11 @@ footer {
           @include breakpoint($desktop) {
             @include span-columns(6);
             @include omega;
-            
+
           }
 
      }
-   
+
 
      .build-with-care{
          text-align:center;
@@ -188,7 +205,7 @@ footer {
           @include breakpoint($desktop) {
             @include span-columns(6);
           }
-         
+
      }
      .guidance{
          text-align:center;
@@ -198,7 +215,7 @@ footer {
           @include breakpoint($desktop) {
             @include span-columns(6);
           }
-         
+
      }
 
 }

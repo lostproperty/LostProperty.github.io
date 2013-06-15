@@ -275,7 +275,7 @@ header[role="banner"] {
   /* TODO: center without width check technique when I have internet connection */
   margin-left: auto;
   margin-right: auto;
-  width: 100px; }
+  width: 120px; }
 
 .heart-container pre {
   font-family: courier;
@@ -283,6 +283,9 @@ header[role="banner"] {
   text-align: left;
   line-height: 1.0;
   margin: 0; }
+
+.hide {
+  display: none; }
 
 ul#menu-top-nav {
   list-style-type: none;

@@ -71,7 +71,7 @@ header[role="banner"] {
     /* TODO: center without width check technique when I have internet connection */
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
+    width: 120px;
 }
 
 .heart-container pre{
@@ -79,6 +79,10 @@ header[role="banner"] {
     font-size: 11px; text-align:left;
     line-height: 1.0;
     margin: 0;
+}
+
+.hide{
+    display: none;
 }
 
 ul#menu-top-nav{

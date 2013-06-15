@@ -75,10 +75,17 @@ header[role="banner"] {
 }
 
 .heart-container pre{
-    font-family:courier;
-    font-size: 11px; text-align:left;
+    font-family:courier new;
+    font-size: 11px; 
+    text-align:center;
     line-height: 1.0;
     margin: 0;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+    &.beat{
+       opacity: 1;
+       letter-spacing:0.1px
+    }
 }
 
 .hide{
@@ -160,6 +167,9 @@ footer {
           }
          text-align:center;
          color: $white;
+         h2 {
+         opacity:0.85;
+         }
      }
 }
 

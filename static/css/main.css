@@ -278,11 +278,16 @@ header[role="banner"] {
   width: 120px; }
 
 .heart-container pre {
-  font-family: courier;
+  font-family: courier new;
   font-size: 11px;
-  text-align: left;
+  text-align: center;
   line-height: 1.0;
-  margin: 0; }
+  margin: 0;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out; }
+  .heart-container pre.beat {
+    opacity: 1;
+    letter-spacing: 0.1px; }
 
 .hide {
   display: none; }
@@ -363,6 +368,8 @@ footer {
         margin-left: 34.11922%; }
         .tagline-container .tagline:last-child {
           margin-right: 0; } }
+    .tagline-container .tagline h2 {
+      opacity: 0.85; }
 
 .intro-wrapper {
   background-color: white;

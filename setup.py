@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='Lost Property',
+    name='Lost Property Site',
     version='1.0',
     long_description=__doc__,
     packages=['lostproperty'],

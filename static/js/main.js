@@ -5,7 +5,7 @@ function beatHeart(){
 
 var authTimer = setInterval(function() {
     beatHeart();
-}, 2000);
+}, 1000);
 
 $('.heart-container').click(function() {
     beatHeart();

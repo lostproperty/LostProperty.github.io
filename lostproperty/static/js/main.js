@@ -1,5 +1,11 @@
 function beatHeart(){
-    $('#heart').toggleClass('beat');
+    $el = $('#heart')
+    $el.toggleClass('beat');
+    //var str= $el.html();
+    //str = str.replace("1","2","g");
+    //str = str.replace("0","1","g");
+    //str = str.replace("2","0","g");
+    //$el.html(str);
 }
 
 

@@ -3,4 +3,6 @@
 .tags
 *.egg-info
 ENV
+/build
+/dist
 .sass-cache

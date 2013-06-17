@@ -11,7 +11,7 @@ function beatHeart(){
 
 var authTimer = setInterval(function() {
     beatHeart();
-}, 1000);
+}, 1500);
 
 $('.heart-container').click(function() {
     beatHeart();

@@ -226,15 +226,19 @@ h1 {
   font-size: 32px; }
 
 h2 {
-  font-size: 24px; }
+  font-size: 24px;
+  margin-bottom: 25px; }
+
+h2 img {
+  margin-bottom: 8px;
+  margin-right: 10px; }
 
 h3 {
   font-weight: 700;
   margin-bottom: 0; }
 
 hr {
-  width: 30px;
-  margin: auto; }
+  display: none; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -245,7 +249,7 @@ header[role="banner"] {
   background: none repeat scroll 0 0 #af1d4c;
   height: 88px;
   width: 100%;
-  padding: 0 10px; }
+  padding: 0 15px; }
   header[role="banner"] .header-container {
     *zoom: 1;
     max-width: 960px;
@@ -327,7 +331,8 @@ header hgroup {
 
 .work-wrapper {
   background-color: #f0f0f0;
-  min-height: 250px; }
+  min-height: 250px;
+  margin-top: 20px; }
 
 .contact-wrapper {
   background-color: #d71c53;
@@ -357,8 +362,9 @@ footer {
       .tagline-container .tagline {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
         .tagline-container .tagline:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -388,14 +394,15 @@ footer {
   .intro-container:after {
     clear: both; }
   .intro-container .who-are-we {
-    padding-top: 45px;
-    text-align: center; }
+    padding-top: 35px;
+    text-align: left; }
     @media screen and (max-width: 767px) {
       .intro-container .who-are-we {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
         .intro-container .who-are-we:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -403,19 +410,20 @@ footer {
         display: block;
         float: left;
         margin-right: 2.35765%;
-        width: 48.82117%; }
+        width: 40.29137%;
+        margin-left: 8.5298%; }
         .intro-container .who-are-we:last-child {
           margin-right: 0; } }
   .intro-container .collaboration {
-    padding-top: 45px;
-    text-align: center; }
+    padding-top: 35px;
+    text-align: left; }
     @media screen and (max-width: 767px) {
       .intro-container .collaboration {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%;
-        margin-right: 0; }
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
         .intro-container .collaboration:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -423,18 +431,18 @@ footer {
         display: block;
         float: left;
         margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-right: 0; }
+        width: 40.29137%; }
         .intro-container .collaboration:last-child {
           margin-right: 0; } }
   .intro-container .build-with-care {
-    text-align: center; }
+    text-align: left; }
     @media screen and (max-width: 767px) {
       .intro-container .build-with-care {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
         .intro-container .build-with-care:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -442,17 +450,19 @@ footer {
         display: block;
         float: left;
         margin-right: 2.35765%;
-        width: 48.82117%; }
+        width: 40.29137%;
+        margin-left: 8.5298%; }
         .intro-container .build-with-care:last-child {
           margin-right: 0; } }
   .intro-container .guidance {
-    text-align: center; }
+    text-align: left; }
     @media screen and (max-width: 767px) {
       .intro-container .guidance {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
         .intro-container .guidance:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -460,7 +470,7 @@ footer {
         display: block;
         float: left;
         margin-right: 2.35765%;
-        width: 48.82117%; }
+        width: 40.29137%; }
         .intro-container .guidance:last-child {
           margin-right: 0; } }
 
@@ -475,13 +485,13 @@ footer {
   .work-container:after {
     clear: both; }
   .work-container .work {
-    padding-top: 45px;
+    padding-top: 25px;
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 25.58941%;
-    text-align: center; }
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    text-align: left; }
     .work-container .work:last-child {
       margin-right: 0; }
 
@@ -500,8 +510,9 @@ footer {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 100%;
-    text-align: center; }
+    width: 82.94039%;
+    margin-left: 8.5298%;
+    text-align: justify; }
     .clients-container .clients:last-child {
       margin-right: 0; }
   .clients-container ul {
@@ -523,13 +534,13 @@ footer {
   .belief-container:after {
     clear: both; }
   .belief-container .belief {
-    padding-top: 45px;
+    padding-top: 25px;
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 82.94039%;
     margin-left: 8.5298%;
-    text-align: center; }
+    text-align: left; }
     .belief-container .belief:last-child {
       margin-right: 0; }
     .belief-container .belief p {
@@ -552,8 +563,9 @@ footer {
       .contact-container .twitter-contact {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
         .contact-container .twitter-contact:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -576,8 +588,9 @@ footer {
       .contact-container .mail-contact {
         display: block;
         float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        margin-left: 8.5298%; }
         .contact-container .mail-contact:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {

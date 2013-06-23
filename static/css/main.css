@@ -245,7 +245,7 @@ header[role="banner"] {
   background: none repeat scroll 0 0 #af1d4c;
   height: 88px;
   width: 100%;
-  padding: 0 10px; }
+  padding: 0 15px; }
   header[role="banner"] .header-container {
     *zoom: 1;
     max-width: 960px;
@@ -398,7 +398,8 @@ footer {
       display: block;
       float: left;
       margin-right: 7.42297%;
-      width: 100%; }
+      width: 261.13446%;
+      margin-left: 26.85574%; }
       .intro-container .who-are-we:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 768px) {
@@ -406,7 +407,8 @@ footer {
       display: block;
       float: left;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 40.29137%;
+      margin-left: 8.5298%; }
       .intro-container .who-are-we:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 767px) {
@@ -414,8 +416,8 @@ footer {
       display: block;
       float: left;
       margin-right: 7.42297%;
-      width: 100%;
-      margin-right: 0; }
+      width: 261.13446%;
+      margin-left: 26.85574%; }
       .intro-container .collaboration:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 768px) {
@@ -423,7 +425,7 @@ footer {
       display: block;
       float: left;
       margin-right: 2.35765%;
-      width: 48.82117%;
+      width: 40.29137%;
       margin-right: 0; }
       .intro-container .collaboration:last-child {
         margin-right: 0; } }
@@ -432,7 +434,8 @@ footer {
       display: block;
       float: left;
       margin-right: 7.42297%;
-      width: 100%; }
+      width: 261.13446%;
+      margin-left: 26.85574%; }
       .intro-container .build-with-care:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 768px) {
@@ -440,7 +443,8 @@ footer {
       display: block;
       float: left;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 40.29137%;
+      margin-left: 8.5298%; }
       .intro-container .build-with-care:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 767px) {
@@ -448,7 +452,8 @@ footer {
       display: block;
       float: left;
       margin-right: 7.42297%;
-      width: 100%; }
+      width: 261.13446%;
+      margin-left: 26.85574%; }
       .intro-container .guidance:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 768px) {
@@ -456,7 +461,8 @@ footer {
       display: block;
       float: left;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 40.29137%;
+      margin-right: 0; }
       .intro-container .guidance:last-child {
         margin-right: 0; } }
 
@@ -475,8 +481,8 @@ footer {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 25.58941%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
     text-align: center; }
     .work-container .work:last-child {
       margin-right: 0; }
@@ -496,7 +502,8 @@ footer {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 100%;
+    width: 82.94039%;
+    margin-left: 8.5298%;
     text-align: center; }
     .clients-container .clients:last-child {
       margin-right: 0; }
@@ -523,7 +530,8 @@ footer {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 82.94039%; }
+    width: 82.94039%;
+    margin-left: 8.5298%; }
     .belief-container .belief:last-child {
       margin-right: 0; }
     .belief-container .belief .intro {
@@ -557,7 +565,8 @@ footer {
         display: block;
         float: left;
         margin-right: 7.42297%;
-        width: 100%; }
+        width: 261.13446%;
+        margin-left: 26.85574%; }
         .contact-container .twitter-contact:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {
@@ -581,7 +590,8 @@ footer {
         display: block;
         float: left;
         margin-right: 7.42297%;
-        width: 100%; }
+        width: 261.13446%;
+        margin-left: 26.85574%; }
         .contact-container .mail-contact:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 768px) {

@@ -161,7 +161,8 @@ footer {
 
          padding-top:60px;
          @include breakpoint($mobile) {
-          @include span-columns(4);
+          @include span-columns(10);
+          @include shift(1);
          }
          @include breakpoint($desktop) {
              @include span-columns(4);

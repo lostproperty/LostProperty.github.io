@@ -183,10 +183,18 @@ footer {
 }
 .intro-container{
     @include outer-container;
+    padding-top:45px;
+    text-align: center ;
+
+    p {
+        text-align: left;
+    }
+
+    div {
+        margin-bottom: 3em;
+    }
 
      .who-are-we{
-         padding-top:45px;
-         text-align:center;
           @include breakpoint($mobile) {
             @include span-columns(4);
           }
@@ -195,8 +203,6 @@ footer {
           }
      }
      .collaboration{
-         padding-top:45px;
-         text-align:center;
           @include breakpoint($mobile) {
             @include span-columns(4);
             @include omega;
@@ -209,9 +215,7 @@ footer {
 
      }
 
-
      .build-with-care{
-         text-align:center;
           @include breakpoint($mobile) {
             @include span-columns(4);
           }
@@ -221,7 +225,6 @@ footer {
 
      }
      .guidance{
-         text-align:center;
           @include breakpoint($mobile) {
             @include span-columns(4);
           }
@@ -266,11 +269,28 @@ footer {
      .belief {
          padding-top:45px;
          @include span-columns(10);
-         @include shift(1);
-         text-align:center;
-         p {
-           margin-top : 0.2em;
+
+         .intro {
+             text-align: center;
          }
+
+         ul { 
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            p {
+                margin: 0;
+            }
+
+            li {
+                margin-bottom: 3em;
+            }
+
+            li:last-child {
+                margin-bottom: 5em;
+            }
+        }
      }
 }
 .contact-container{
@@ -313,5 +333,4 @@ footer {
          text-align:center;
      }
 }
-
 

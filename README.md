@@ -24,4 +24,4 @@ sass --watch main.scss:../css/main.css
 ## Deploying
 - Freeze the site via `python frozen.py`
 - Push it on the remote (origin)
-- Merge it on master via `git pull -s subtree origin source`
+- Merge it on master via `git pull -s subtree origin source` (or `git merge -s subtree source` if you have set `git-pull` to rebase by default instead of merge)

@@ -381,88 +381,84 @@ footer {
   *zoom: 1;
   max-width: 960px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-top: 45px;
+  text-align: center; }
   .intro-container:before, .intro-container:after {
     content: " ";
     display: table; }
   .intro-container:after {
     clear: both; }
-  .intro-container .who-are-we {
-    padding-top: 45px;
-    text-align: center; }
-    @media screen and (max-width: 767px) {
-      .intro-container .who-are-we {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
-        .intro-container .who-are-we:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 768px) {
-      .intro-container .who-are-we {
-        display: block;
-        float: left;
-        margin-right: 2.35765%;
-        width: 48.82117%; }
-        .intro-container .who-are-we:last-child {
-          margin-right: 0; } }
-  .intro-container .collaboration {
-    padding-top: 45px;
-    text-align: center; }
-    @media screen and (max-width: 767px) {
-      .intro-container .collaboration {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%;
-        margin-right: 0; }
-        .intro-container .collaboration:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 768px) {
-      .intro-container .collaboration {
-        display: block;
-        float: left;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-right: 0; }
-        .intro-container .collaboration:last-child {
-          margin-right: 0; } }
-  .intro-container .build-with-care {
-    text-align: center; }
-    @media screen and (max-width: 767px) {
-      .intro-container .build-with-care {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
-        .intro-container .build-with-care:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 768px) {
-      .intro-container .build-with-care {
-        display: block;
-        float: left;
-        margin-right: 2.35765%;
-        width: 48.82117%; }
-        .intro-container .build-with-care:last-child {
-          margin-right: 0; } }
-  .intro-container .guidance {
-    text-align: center; }
-    @media screen and (max-width: 767px) {
-      .intro-container .guidance {
-        display: block;
-        float: left;
-        margin-right: 7.42297%;
-        width: 100%; }
-        .intro-container .guidance:last-child {
-          margin-right: 0; } }
-    @media screen and (min-width: 768px) {
-      .intro-container .guidance {
-        display: block;
-        float: left;
-        margin-right: 2.35765%;
-        width: 48.82117%; }
-        .intro-container .guidance:last-child {
-          margin-right: 0; } }
+  .intro-container p {
+    text-align: left; }
+  .intro-container div {
+    margin-bottom: 3em; }
+  @media screen and (max-width: 767px) {
+    .intro-container .who-are-we {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .intro-container .who-are-we:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 768px) {
+    .intro-container .who-are-we {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .intro-container .who-are-we:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 767px) {
+    .intro-container .collaboration {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-right: 0; }
+      .intro-container .collaboration:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 768px) {
+    .intro-container .collaboration {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0; }
+      .intro-container .collaboration:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 767px) {
+    .intro-container .build-with-care {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .intro-container .build-with-care:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 768px) {
+    .intro-container .build-with-care {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .intro-container .build-with-care:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 767px) {
+    .intro-container .guidance {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .intro-container .guidance:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 768px) {
+    .intro-container .guidance {
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .intro-container .guidance:last-child {
+        margin-right: 0; } }
 
 .work-container {
   *zoom: 1;
@@ -527,13 +523,21 @@ footer {
     display: block;
     float: left;
     margin-right: 2.35765%;
-    width: 82.94039%;
-    margin-left: 8.5298%;
-    text-align: center; }
+    width: 82.94039%; }
     .belief-container .belief:last-child {
       margin-right: 0; }
-    .belief-container .belief p {
-      margin-top: 0.2em; }
+    .belief-container .belief .intro {
+      text-align: center; }
+    .belief-container .belief ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .belief-container .belief ul p {
+        margin: 0; }
+      .belief-container .belief ul li {
+        margin-bottom: 3em; }
+      .belief-container .belief ul li:last-child {
+        margin-bottom: 5em; }
 
 .contact-container {
   *zoom: 1;

@@ -160,11 +160,11 @@ footer {
      .tagline{
 
          padding-top:60px;
-         @include breakpoint($mobile) {
+         @include media($mobile) {
           @include span-columns(10);
           @include shift(1);
          }
-         @include breakpoint($desktop) {
+         @include media($desktop) {
              @include span-columns(4);
              @include shift(4);
 
@@ -196,22 +196,22 @@ footer {
     }
 
      .who-are-we{
-          @include breakpoint($mobile) {
+          @include media($mobile) {
               @include span-columns(10);
               @include shift(1);
           }
-          @include breakpoint($desktop) {
+          @include media($desktop) {
             @include span-columns(5);
             @include shift(1);
           }
      }
      .collaboration{
-          @include breakpoint($mobile) {
+          @include media($mobile) {
               @include span-columns(10);
               @include shift(1);
             
           }
-          @include breakpoint($desktop) {
+          @include media($desktop) {
             @include span-columns(5);
             
             @include omega;
@@ -221,22 +221,22 @@ footer {
      }
 
      .build-with-care{
-          @include breakpoint($mobile) {
+          @include media($mobile) {
                 @include span-columns(10);
                 @include shift(1);
           }
-          @include breakpoint($desktop) {
+          @include media($desktop) {
             @include span-columns(5);
             @include shift(1);
           }
 
      }
      .guidance{
-          @include breakpoint($mobile) {
+          @include media($mobile) {
               @include span-columns(10);
               @include shift(1);
           }
-          @include breakpoint($desktop) {
+          @include media($desktop) {
             @include span-columns(5);
             @include omega;
           }
@@ -308,11 +308,11 @@ footer {
      @include outer-container;
      .twitter-contact {
          padding-top:60px;
-         @include breakpoint($mobile) {
+         @include media($mobile) {
             @include span-columns(10);
             @include shift(1);
           }
-          @include breakpoint($desktop) {
+          @include media($desktop) {
             @include span-columns(4);
             @include shift(2);
           }
@@ -321,11 +321,11 @@ footer {
          text-align:center;
      }
       .mail-contact {
-          @include breakpoint($mobile) {
+          @include media($mobile) {
             @include span-columns(10);
             @include shift(1);
           }
-          @include breakpoint($desktop) {
+          @include media($desktop) {
             @include span-columns(4);
           }
 

@@ -1,9 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-   <div class="container">
+   <div class="portfolio-container">
     <h2>Our Work</h2>
-
-<p>List clients logo : Google, Potato, Unit9, Pirato, WorkClub, McLaren, Ogilvy, BBH, Dare, Poke.</p>
+      {% for item in items %}
+      <div>
+        <a href="{{ item.url }}">
+          <img src="{{ item.image }}">
+        </a>
+        <h3>{{ item.title }}</h3>
+        {% if item.description %}
+        <p>{{ item.description }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
     </div> <!-- /container -->
 
 {% endblock %}

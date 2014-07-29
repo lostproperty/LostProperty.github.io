@@ -50,8 +50,10 @@ def technology():
     return render_template('technology.html')
 
 
-def work(name=None):
-    return render_template('work.html')
+@app.route('/work.html')
+def work():
+    from lostproperty.work import examples
+    return render_template('work.html', items=examples)
 
 
 @app.route('/sitemap.xml', methods=['GET'])

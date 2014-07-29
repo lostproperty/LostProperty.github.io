@@ -1859,6 +1859,9 @@ footer {
       margin-right: 0; }
     .portfolio-container div:nth-child(4n+1) {
       clear: left; }
+    .portfolio-container div img {
+      width: 305px;
+      height: 200px; }
 
 .belief-container {
   *zoom: 1;

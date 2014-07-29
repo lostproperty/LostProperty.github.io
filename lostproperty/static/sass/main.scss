@@ -281,6 +281,11 @@ footer {
        @include span-columns(4);
        @include omega(4n);
        margin-bottom: 1em;
+
+       img {
+         width: 305px;
+         height: 200px;
+       }
      }
 }
 .belief-container{
@@ -355,4 +360,3 @@ footer {
          text-align:center;
      }
 }
-

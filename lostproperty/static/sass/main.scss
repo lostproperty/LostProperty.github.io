@@ -276,15 +276,30 @@ footer {
     }
 }
 .portfolio-container {
+    @include media($mobile) {
+      padding: 0 1em;
+    }
      @include outer-container;
      div {
-       @include span-columns(4);
-       @include omega(4n);
        margin-bottom: 1em;
 
-       img {
-         width: 305px;
-         height: 200px;
+       @include media($desktop) {
+         @include span-columns(4);
+         @include omega(4n);
+
+         img {
+           max-width: 305px;
+           height: 200px;
+         }
+       }
+
+       @include media($mobile) {
+         @include span-columns(12);
+         // @include omega(3n);
+
+         img {
+           display: none;
+         }
        }
      }
 }

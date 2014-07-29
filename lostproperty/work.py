@@ -55,4 +55,4 @@ def populate_examples():
             yield Work(title, url, desc)
 
 
-examples = list(populate_examples())
+examples = lambda: list(populate_examples())

@@ -53,7 +53,7 @@ def technology():
 @app.route('/work.html')
 def work():
     from lostproperty.work import examples
-    return render_template('work.html', items=examples)
+    return render_template('work.html', items=examples())
 
 
 @app.route('/sitemap.xml', methods=['GET'])

@@ -1842,26 +1842,41 @@ footer {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
+  @media screen and (max-width: 767px) {
+    .portfolio-container {
+      padding: 0 1em; } }
   .portfolio-container:before, .portfolio-container:after {
     content: " ";
     display: table; }
   .portfolio-container:after {
     clear: both; }
   .portfolio-container div {
-    display: block;
-    float: left;
-    margin-right: 2.35765%;
-    width: 31.76157%;
     margin-bottom: 1em; }
-    .portfolio-container div:last-child {
-      margin-right: 0; }
-    .portfolio-container div:nth-child(4n) {
-      margin-right: 0; }
-    .portfolio-container div:nth-child(4n+1) {
-      clear: left; }
-    .portfolio-container div img {
-      width: 305px;
-      height: 200px; }
+    @media screen and (min-width: 768px) {
+      .portfolio-container div {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .portfolio-container div:last-child {
+          margin-right: 0; }
+        .portfolio-container div:nth-child(4n) {
+          margin-right: 0; }
+        .portfolio-container div:nth-child(4n+1) {
+          clear: left; }
+        .portfolio-container div img {
+          max-width: 305px;
+          height: 200px; } }
+    @media screen and (max-width: 767px) {
+      .portfolio-container div {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .portfolio-container div:last-child {
+          margin-right: 0; }
+        .portfolio-container div img {
+          display: none; } }
 
 .belief-container {
   *zoom: 1;

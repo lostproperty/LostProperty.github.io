@@ -11,7 +11,7 @@ def no_sitemap(func):
         return func(*args, **kwargs)
     wrapper.no_sitemap = True
     return wrapper
-  
+
 
 @app.route('/')
 def index():
@@ -57,24 +57,20 @@ def work(name=None):
 @app.route('/sitemap.xml', methods=['GET'])
 @no_sitemap
 def sitemap():
-      """Generate sitemap.xml. Makes a list of urls and date modified."""
-      pages=[]
-      now=datetime.now().isoformat()
-      # static pages
-      for rule in app.url_map.iter_rules():
-          if "GET" in rule.methods \
-              and not hasattr(app.view_functions[rule.endpoint],'no_sitemap') \
-              and len(rule.arguments)==0:
-              
-              pages.append(
-                           [rule.rule,now]
-                           )
+    """Generate sitemap.xml. Makes a list of urls and date modified."""
+    pages = []
+    now = datetime.now().isoformat()
+    # static pages
+    for rule in app.url_map.iter_rules():
+        if "GET" in rule.methods \
+            and not hasattr(app.view_functions[rule.endpoint], 'no_sitemap') \
+                and len(rule.arguments) == 0:
+            pages.append([rule.rule, now])
 
-      sitemap_xml = render_template('sitemap.xml', pages=pages)
-      response= app.make_response(sitemap_xml)
-      response.headers["Content-Type"] = "application/xml"    
-    
-      return response
+    sitemap_xml = render_template('sitemap.xml', pages=pages)
+    response = app.make_response(sitemap_xml)
+    response.headers["Content-Type"] = "application/xml"
+    return response
 
 if __name__ == '__main__':
     app.debug = True

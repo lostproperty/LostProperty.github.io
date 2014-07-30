@@ -98,17 +98,18 @@ header[role="banner"] {
 
 ul#menu-top-nav{
     list-style-type:none;
-    margin-top:30px;
+    margin-top: 20px;
     padding:0;
 
     li {
         display:inline;
         float: right;
-        margin-left:30px;
-        a{
+        a {
         color : $magento_shade;
         text-decoration : none;
-        font-size : 24px;
+        display: block;
+        padding: 10px 20px ;
+        // font-size : 24px;
           &:hover{
             color : $white;
 
@@ -374,4 +375,22 @@ footer {
          @include shift(2);
          text-align:center;
      }
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }

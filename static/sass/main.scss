@@ -52,7 +52,6 @@ body {
 
 header[role="banner"] {
     background: none repeat scroll 0 0 $dark_magento;
-    height: 88px;
     width: 100%;
     padding: 0 15px;
     .header-container {
@@ -98,20 +97,21 @@ header[role="banner"] {
 
 ul#menu-top-nav{
     list-style-type:none;
-    margin-top:30px;
     padding:0;
+    margin: 0;
 
     li {
         display:inline;
         float: right;
-        margin-left:30px;
-        a{
+        a {
         color : $magento_shade;
         text-decoration : none;
-        font-size : 24px;
+        display: block;
+        padding: 30px 20px ;
+        // font-size : 24px;
           &:hover{
             color : $white;
-
+            background-color: $light_magento;
           }
         }
     }
@@ -275,6 +275,50 @@ footer {
         }
     }
 }
+.portfolio-intro {
+  background-color: $light_magento;
+  h2 {
+    background-color: $light_magento;
+    color: $white;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 33%;
+    text-align: center;
+  }
+}
+.portfolio-container {
+    padding-top: 1em;
+    @include media($mobile) {
+      padding: 0 1em;
+    }
+     @include outer-container;
+     div {
+       margin-bottom: 1em;
+
+       @include media($desktop) {
+         @include span-columns(4);
+         @include omega(3n);
+
+         a {
+           display: block;
+         }
+
+         img {
+           max-width: 305px;
+           max-height: 172px;
+         }
+       }
+
+       @include media($mobile) {
+         @include span-columns(12);
+
+         img {
+           display: none;
+         }
+       }
+     }
+}
 .belief-container{
      @include outer-container;
      .belief {
@@ -348,3 +392,20 @@ footer {
      }
 }
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

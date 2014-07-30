@@ -1533,7 +1533,7 @@ you can use the generic selector below, but it's slower:
 .icon-twitter:before {
   content: "\e001"; }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Gabriela', serif;
   font-weight: normal; }
 

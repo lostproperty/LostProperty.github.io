@@ -1,17 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Gabriela);
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Gabriela);
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .fa {
   display: inline-block;
   font-family: FontAwesome;
@@ -87,35 +86,30 @@
 
   100% {
     -moz-transform: rotate(359deg); } }
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg); }
 
   100% {
     -webkit-transform: rotate(359deg); } }
-
 @-o-keyframes spin {
   0% {
     -o-transform: rotate(0deg); }
 
   100% {
     -o-transform: rotate(359deg); } }
-
 @-ms-keyframes spin {
   0% {
     -ms-transform: rotate(0deg); }
 
   100% {
     -ms-transform: rotate(359deg); } }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
 
   100% {
     transform: rotate(359deg); } }
-
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
   -webkit-transform: rotate(90deg);
@@ -1485,7 +1479,6 @@ textarea {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -1507,7 +1500,6 @@ textarea {
   src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'icomoon';
@@ -1572,7 +1564,6 @@ body {
 
 header[role="banner"] {
   background: none repeat scroll 0 0 #af1d4c;
-  height: 88px;
   width: 100%;
   padding: 0 15px; }
   header[role="banner"] .header-container {
@@ -1625,18 +1616,19 @@ header[role="banner"] {
 
 ul#menu-top-nav {
   list-style-type: none;
-  margin-top: 30px;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   ul#menu-top-nav li {
     display: inline;
-    float: right;
-    margin-left: 30px; }
+    float: right; }
     ul#menu-top-nav li a {
       color: #d78ea6;
       text-decoration: none;
-      font-size: 24px; }
+      display: block;
+      padding: 30px 20px; }
       ul#menu-top-nav li a:hover {
-        color: white; }
+        color: white;
+        background-color: #d71c53; }
 
 header hgroup h1 {
   background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
@@ -1845,6 +1837,61 @@ footer {
       margin-bottom: 20px;
       padding: 0 10px; }
 
+.portfolio-intro {
+  background-color: #d71c53; }
+  .portfolio-intro h2 {
+    background-color: #d71c53;
+    color: white;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 33%;
+    text-align: center; }
+
+.portfolio-container {
+  padding-top: 1em;
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 767px) {
+    .portfolio-container {
+      padding: 0 1em; } }
+  .portfolio-container:before, .portfolio-container:after {
+    content: " ";
+    display: table; }
+  .portfolio-container:after {
+    clear: both; }
+  .portfolio-container div {
+    margin-bottom: 1em; }
+    @media screen and (min-width: 768px) {
+      .portfolio-container div {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        .portfolio-container div:last-child {
+          margin-right: 0; }
+        .portfolio-container div:nth-child(3n) {
+          margin-right: 0; }
+        .portfolio-container div:nth-child(3n+1) {
+          clear: left; }
+        .portfolio-container div a {
+          display: block; }
+        .portfolio-container div img {
+          max-width: 305px;
+          max-height: 172px; } }
+    @media screen and (max-width: 767px) {
+      .portfolio-container div {
+        display: block;
+        float: left;
+        margin-right: 2.35765%;
+        width: 100%; }
+        .portfolio-container div:last-child {
+          margin-right: 0; }
+        .portfolio-container div img {
+          display: none; } }
+
 .belief-container {
   *zoom: 1;
   max-width: 960px;
@@ -1956,3 +2003,20 @@ footer {
     text-align: center; }
     .footer-container .company-registration:last-child {
       margin-right: 0; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }

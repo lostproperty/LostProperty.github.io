@@ -276,7 +276,20 @@ footer {
         }
     }
 }
+.portfolio-intro {
+  background-color: $light_magento;
+  h2 {
+    background-color: $light_magento;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 33%;
+    text-align: center;
+  }
+}
 .portfolio-container {
+    padding-top: 1em;
     @include media($mobile) {
       padding: 0 1em;
     }
@@ -286,17 +299,20 @@ footer {
 
        @include media($desktop) {
          @include span-columns(4);
-         @include omega(4n);
+         @include omega(3n);
+
+         a {
+           display: block;
+         }
 
          img {
            max-width: 305px;
-           height: 200px;
+           max-height: 172px;
          }
        }
 
        @include media($mobile) {
          @include span-columns(12);
-         // @include omega(3n);
 
          img {
            display: none;

@@ -26,9 +26,15 @@ class Work(object):
     @property
     def image(self):
         static_dir = pkg_resources.resource_filename('lostproperty', 'static')
-        target = os.path.join(static_dir, 'images', 'work', slug(self.title) + '.jpg')
+        target = os.path.join(static_dir, 'images', 'work', slug(self.title))
         placeholder = "static/images/portfolioplaceholder.gif"
-        path = target if os.path.exists(target) else placeholder
+
+        for ext in '.png', '.jpg':
+            if os.path.exists(target + ext):
+                path = target + ext
+                break
+            else:
+                path = placeholder
         return static_url(path)
 
 

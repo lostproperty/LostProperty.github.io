@@ -314,7 +314,8 @@ footer {
          @include span-columns(12);
 
          img {
-           display: none;
+           max-width: 305px;
+           max-height: 172px;
          }
        }
      }

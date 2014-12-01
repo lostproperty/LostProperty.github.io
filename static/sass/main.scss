@@ -76,7 +76,7 @@ header[role="banner"] {
 
 .heart-container pre{
     font-family:courier new;
-    font-size: 11px; 
+    font-size: 11px;
     text-align:center;
     line-height: 1.0;
     margin: 0;
@@ -134,7 +134,7 @@ header hgroup {
 
 .tagline-wrapper {
     background-color: $light_magento;
-    height: 255px;
+    // height: 255px;
 }
 
 
@@ -161,14 +161,14 @@ footer {
      .tagline{
 
          padding-top:60px;
+         padding-bottom:60px;
          @include media($mobile) {
           @include span-columns(10);
           @include shift(1);
          }
          @include media($desktop) {
-             @include span-columns(4);
-             @include shift(4);
-
+             // @include span-columns(4);
+             // @include shift(4);
           }
          text-align:center;
          color: $white;
@@ -189,7 +189,7 @@ footer {
     text-align: center ;
 
     p {
-        text-align: left;
+        text-align: center;
     }
 
     div {
@@ -201,20 +201,20 @@ footer {
               @include span-columns(10);
               @include shift(1);
           }
-          @include media($desktop) {
-            @include span-columns(5);
-            @include shift(1);
-          }
+          // @include media($desktop) {
+          //   @include span-columns(5);
+          //   @include shift(1);
+          // }
      }
      .collaboration{
           @include media($mobile) {
               @include span-columns(10);
               @include shift(1);
-            
+
           }
           @include media($desktop) {
             @include span-columns(5);
-            
+
             @include omega;
 
           }
@@ -226,10 +226,10 @@ footer {
                 @include span-columns(10);
                 @include shift(1);
           }
-          @include media($desktop) {
-            @include span-columns(5);
-            @include shift(1);
-          }
+          // @include media($desktop) {
+          //   @include span-columns(5);
+          //   @include shift(1);
+          // }
 
      }
      .guidance{
@@ -323,21 +323,21 @@ footer {
 .belief-container{
      @include outer-container;
      .belief {
-         padding-top:45px;
          @include span-columns(10);
          @include shift(1);
+         text-align: center;
 
          .intro {
              text-align: center;
          }
 
-         ul { 
+         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
 
             p {
-                margin: 0;
+                text-align: left;
             }
 
             li {
@@ -409,4 +409,11 @@ footer {
  */
 .cf {
     *zoom: 1;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 2em;
 }

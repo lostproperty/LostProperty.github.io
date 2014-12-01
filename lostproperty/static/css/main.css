@@ -1877,12 +1877,12 @@ footer {
   .belief-container:after {
     clear: both; }
   .belief-container .belief {
-    padding-top: 45px;
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 82.94039%;
-    margin-left: 8.5298%; }
+    margin-left: 8.5298%;
+    text-align: center; }
     .belief-container .belief:last-child {
       margin-right: 0; }
     .belief-container .belief .intro {
@@ -1892,7 +1892,7 @@ footer {
       padding: 0;
       margin: 0; }
       .belief-container .belief ul p {
-        margin: 0; }
+        text-align: left; }
       .belief-container .belief ul li {
         margin-bottom: 3em; }
       .belief-container .belief ul li:last-child {

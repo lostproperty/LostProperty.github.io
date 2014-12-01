@@ -323,9 +323,9 @@ footer {
 .belief-container{
      @include outer-container;
      .belief {
-         padding-top:45px;
          @include span-columns(10);
          @include shift(1);
+         text-align: center;
 
          .intro {
              text-align: center;
@@ -337,7 +337,7 @@ footer {
             margin: 0;
 
             p {
-                margin: 0;
+                text-align: left;
             }
 
             li {

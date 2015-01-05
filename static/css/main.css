@@ -1895,8 +1895,12 @@ footer {
         text-align: left; }
       .belief-container .belief ul li {
         margin-bottom: 3em; }
+        .belief-container .belief ul li h3 {
+          margin-bottom: 12px; }
       .belief-container .belief ul li:last-child {
         margin-bottom: 5em; }
+      .belief-container .belief ul .example img {
+        max-width: 100%; }
 
 .contact-container {
   *zoom: 1;

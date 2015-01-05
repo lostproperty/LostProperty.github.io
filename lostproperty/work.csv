@@ -1,6 +1,8 @@
-Sainsbury's Food Rescue,http://www.sainsburysfoodrescue.co.uk/,Platform to stop food wastage for Sainsbury's and Google.
-All Things Hair,http://allthingshair.com,Global content platform for Unilever and Google to promote women's hair care brands.
-Seabeard,http://www.handcircus.com/seabeard/,Backend for the indie game company Hand Circus's new multiplayer iPhone and iPad game.
-AMV BBDO Graduate,https://graduate.amvbbdo.com/,Webapp for managing graduate applications at AMV BBDO.
-They Use It,https://theyuse.it,Platform to promote companies using open source technologies.
-Cat in a Flat,http://catinaflat,Online booking system for cat sitters.
+Title,url,description,slug
+Sainsbury's Food Rescue,http://www.sainsburysfoodrescue.co.uk/,Platform to stop food wastage for Sainsbury's and Google.,sainsburys
+All Things Hair,https://www.allthingshair.com,Global content platform for Unilever and Google to promote women's hair care brands.,allthingshair
+Seabeard,http://www.handcircus.com/seabeard/,Backend for the indie game company Hand Circus's new multiplayer iPhone and iPad game.,seabeard
+AMV BBDO Graduate,https://graduate.amvbbdo.com/,Webapp for managing graduate applications at AMV BBDO.,graduate
+They Use It,https://theyuse.it,Platform to promote companies using open source technologies.,theyuseit
+Cat in a Flat,http://catinaflat,Online booking system for cat sitters.,catinaflat
+Warblr,http://www.warblr.net,An audio recognition app that identifies bird songs and calls.,warblr

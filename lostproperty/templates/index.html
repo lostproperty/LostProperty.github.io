@@ -33,7 +33,7 @@
         #}
 
         <div class='build-with-care'>
-             <img src='static/images/quill.png' alt='craftmanship icon'>
+            <img src='static/images/quill.png' alt='craftmanship icon'>
             <h2>What do we offer?</h2>
             <hr/>
             <p>
@@ -78,8 +78,14 @@
           </div>
           <ul>
             <li>
-              <h3 id="allthingshair">All Things Hair</h3>
-              <p><a href="Allthingshair.com">Allthingshair.com</a>
+              <h3 id="allthingshair">{{ work.allthingshair.title }}</h3>
+              <div class="example">
+                <a href="{{ work.allthingshair.url }}">
+                  <img src="{{ work.allthingshair.image}}">
+                </a>
+              </div>
+
+              <p><a href="https://www.allthingshair.com">Allthingshair.com</a>
               is a multi-market youtube channel that features styling tips from
               a variety of celebs and well-known fashion bloggers.
               </p>
@@ -96,7 +102,12 @@
             </li>
 
             <li>
-              <h3 id="catinaflat">Cat in a Flat</h3>
+              <h3 id="catinaflat">{{ work.catinaflat.title }}</h3>
+              <div class="example">
+                <a href="{{ work.catinaflat.url }}">
+                  <img src="{{ work.catinaflat.image }}">
+                </a>
+              </div>
               <p>
               Our friends at <a href="https://catinaflat.com">catinaflat.com</a>
               have a long running cat sitting business that they have carefully
@@ -111,7 +122,12 @@
             </li>
 
             <li>
-            <h3 id="warblr">Warblr</h3>
+              <h3 id="warblr">{{ work.warblr.title }}</h3>
+              <div class="example">
+                <a href="{{ work.warblr.url }}">
+                  <img src="{{ work.warblr.image }}">
+                </a>
+              </div>
             <p>We worked with the incredibly clever team at <a href="http://warblr.net">Warblr</a> to put
             togther the first version of their ios app. Warblr is an audio
             recognition app for birdsong; you simply record the calls of one
@@ -121,7 +137,12 @@
             </li>
 
             <li>
-              <h3 id="seabeard">Seabeard</h3>
+              <h3 id="seabeard">{{ work.seabeard.title }}</h3>
+              <div class="example">
+                <a href="{{ work.seabeard.url }}">
+                  <img src="{{ work.seabeard.image }}">
+                </a>
+              </div>
               <p>Making video games has to be the glamour job of the software
               industry and while we can't lay claim to having built any of the
               gameplay mechanics we are very proud to have been involved in the
@@ -133,11 +154,16 @@
               This was quite a task as it involves massively multiplayer
               gameplay and required highly performant services that worked well
               across mobile devices with all of the vagaries of mobile
-              networks. Check out Seabeard now on the appstore.</p>
+              networks. Check out Seabeard now on the Apple appstore.</p>
             </li>
 
             <li>
-              <h3 id="graduate">AMV BBDO Graduate</h3>
+              <h3 id="graduate">{{ work.graduate.title }}</h3>
+              <div class="example">
+                <a href="{{ work.graduate.url }}">
+                  <img src="{{ work.graduate.image }}">
+                </a>
+              </div>
               <p>Over at AMV BBDO they are very keen to develop the digital
               industry's next generation of talent and part of that is their
               graduate scheme. We built the <a href="https://graduate.amvbbdo.com/">graduate.amvbbdo.com</a>

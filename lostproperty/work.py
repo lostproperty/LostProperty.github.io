@@ -6,7 +6,7 @@ import codecs
 import pkg_resources
 
 
-def slug(s):
+def slugger(s):
     # naivest possible slugger
     s = re.sub('[^A-z\- ]', '', s)
     return s.replace(' ', '-').lower()
@@ -18,15 +18,16 @@ def static_url(fullpath):
 
 class Work(object):
 
-    def __init__(self, title, url, description):
+    def __init__(self, title, url, description, slug):
         self.title = title
         self.url = url
         self.description = description
+        self.slug = slugger(slug)
 
     @property
     def image(self):
         static_dir = pkg_resources.resource_filename('lostproperty', 'static')
-        target = os.path.join(static_dir, 'images', 'work', slug(self.title))
+        target = os.path.join(static_dir, 'images', 'work', self.slug)
         placeholder = "static/images/portfolioplaceholder.gif"
 
         for ext in '.png', '.jpg':
@@ -42,7 +43,7 @@ def unicode_csv_reader(unicode_csv_data, dialect=csv.excel, **kwargs):
     # csv.py doesn't do Unicode; encode temporarily as UTF-8:
     csv_reader = csv.reader(utf_8_encoder(unicode_csv_data),
                             dialect=dialect, **kwargs)
-    for row in csv_reader:
+    for row in list(csv_reader)[1:]:
         # decode UTF-8 back to Unicode, cell by cell:
         yield [unicode(cell, 'utf-8') for cell in row]
 
@@ -57,8 +58,7 @@ def populate_examples():
     with codecs.open(csv_file, encoding='utf8') as fo:
         reader = unicode_csv_reader(fo)
         for row in reader:
-            title, url, desc = row
-            yield Work(title, url, desc)
+            yield Work(*row)
 
 
 examples = lambda: list(populate_examples())

@@ -6,3 +6,4 @@ ENV
 /build
 /dist
 .sass-cache
+resize.py

@@ -3,6 +3,7 @@ from flask import render_template
 app = Flask(__name__)
 from datetime import datetime
 from functools import wraps
+from lostproperty.work import examples
 
 
 def no_sitemap(func):
@@ -15,7 +16,8 @@ def no_sitemap(func):
 
 @app.route('/')
 def index():
-    return render_template('index.html', home=True)
+    work = {w.slug: w for w in examples()}
+    return render_template('index.html', home=True, work=work)
 
 
 #@app.route('/services.html')

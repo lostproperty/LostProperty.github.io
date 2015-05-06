@@ -7,7 +7,7 @@ freezer = Freezer(app)
 
 @freezer.register_generator
 def work_details():
-    for key in settings.PROJECTS.key():
+    for key in settings.PROJECTS.keys():
         yield {'id': key}
 
 if __name__ == '__main__':

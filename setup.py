@@ -7,5 +7,8 @@ setup(
     packages=['lostproperty'],
     include_package_data=True,
     zip_safe=False,
-    install_requires=['Flask', 'Frozen-Flask']
+    install_requires=[
+        'Flask==0.10.1',
+        'Frozen-Flask==0.11'
+    ]
 )

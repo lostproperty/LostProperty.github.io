@@ -1,0 +1,84 @@
+{% extends "work-base.html" %}
+
+{% block summary %}
+		<p><span class="tagline">A platform to end food waste</span> - Sainsbury's Food Rescue is a simple web based tool that helps you find recipes to use up food that may otherwise go to waste. Studies suggest we throw out as much as £60 worth of food and drink every month when we could be putting it to better use. 
+		</p>
+{% endblock %}
+
+{% block description %}
+<div class="wrapper section grey">
+	<div class="container">
+		<h3>Read about it in the press</h3>
+	  <div class="grid-3">		
+			<div class="block">
+				<a href="http://www.gizmodo.co.uk/2014/06/sainsburys-food-rescue-uses-google-voice-tech-to-curb-wastage/">
+					<img src="/static/imgs/press/gizmodo.png" />
+				</a>
+			</div>
+			<div class="block">
+				<a href="http://www.engadget.com/2014/06/05/sainsburys-google-voice-food-waste/">
+					<img src="/static/imgs/press/engadget.png" />
+				</a>
+			</div>
+			<div class="block">
+				<a href="http://www.dandad.org/en/good-campaign-sainsburys/">
+					<img src="/static/imgs/press/dad.png" />
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrapper section ">
+	<div class="container">
+		<div class='col-6'>
+			<h3>Our Role</h3>
+			<ul>
+				<li>Backend</li>
+				<li>Services architecture</li>
+				<li>Search Engine</li>
+				<li>Content Management tool</li>
+			</ul>
+		</div>
+		<div class='col-6'>
+			<h3>Technologies</h3>
+			<ul>
+				<li>Python</li>
+				<li>Pyramid</li>
+				<li>Google Cloud SQL</li>
+				<li>Google App Engine</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="wrapper section grey case-study">
+	<div class="container">
+		<h3>More about this project </h3>
+		<p>It turns out that us Brits are a wasteful bunch. Studies suggest we throw out as much as £60 worth of food and drink every month when we could be putting it to better use. Sainsbury’s Food Rescue helps you find recipes to use up food that may otherwise go to waste and it’s that simple! Just say or write the ingredients you want to rescue and the tool will find tasty recipes.</p>
+
+		<p>We teamed up with Sainsbury’s, Google and B-Reel to create a tool that provides suggestions on how to use the food you'd otherwise be chucking out. Instead of trying to convince you to head over to one of its stores to replenish your supplies, Sainsbury’s wants to help you save those forgotten vegetables at the back of your fridge!The idea was to help people make the most of their leftovers and also reduce waste, but as a positive consequence, help them save money too! </p>
+
+		<p>The result is a search engine that finds recipes which best match the ingredients you searched for. Being able to find delicious recipes which match your leftover requires data, lots of data. Luckily Sainsbury’s provided some raw recipe data which, after processing, tidying and normalisation, created the core information for the search engine. To help you save money and reuse ingredients from the fridge it’s important the results returned are achievable and suitable recipes. To achieve this accuracy, we allow you to specify precise quantities, dietary requirements or disliked ingredients so the result matches not only the search criteria but each individuals taste. </p>
+
+		<p>Early into the project we’d managed to build a search engine which optimised its results based on the quantity, taste and dietary requirements. This was already a key milestone but it was not enough and we wanted to achieve even more. Shaping the recipes into structured data allowed us to do much more. We focused on a few points - the relevance of ingredients to the recipe, name synonyms and the hierarchy between ingredients.</p>
+
+
+		<p>The importance of an ingredient allowed us to affect the ranking of a recipe in the search results. For example, there are many recipes where you could forego one or two ingredients but it would be difficult to make a Beef Wellington without any beef. Handling the importance of ingredients in the search allowed us to give better results and return the most achievable recipes first. </p>
+
+		<p>Some ingredients go by different names in different parts of the world (e.g. zucchini vs. courgette) so we handled these synonyms without having search results being affected.</p>
+
+		<p>Finally, we decided to define a hierarchy between ingredients to allow them to be substituted; this project is about rescuing ingredients and minimising waste after all. We wanted to offer a choice of recipes smart enough to handle ingredients which can be replaced. Not having the right type of cheese or tomato should not stop you from being imaginative and adding a new twist to some of the recipes.</p>
+
+		<p>At Lost Property we believe in empowering our clients with a solution which can evolve without our involvement so we built a CMS which allows Sainsbury’s to update or insert new recipes and add new ingredients meaning the data will always stay up to date.</p>
+
+		<p>We love data so when we got asked to develop a reporting system we were thrilled. We analyse the user interaction with Sainsbury’s Food Rescue to determine “How much has been saved?”, “What are the most popular ingredients?” We always build applications with reporting in mind but this we displayed it to the user via a leaderboard. The difficulty was not “what to show” but “what to not show”.</p>
+
+	</div>
+</div>
+<div class="wrapper section dark">
+	<div class="container">
+	  <h3>Questions?</h3>
+		<p>If you have any questions about this project or you want our input on a similar project feel free to contact us at <a href="mailto:hello@lostpropertyhq.com">hello@lostpropertyhq.com</a></p>
+	</div>
+</div>
+{% endblock %}
+

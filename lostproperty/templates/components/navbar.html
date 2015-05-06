@@ -1,0 +1,21 @@
+<header class="navbar">
+				<div class="container">
+						<div class="logo">
+								 <a href="/" rel="home">
+									 <h1>{{config.TITLE}}</h1>
+								</a>
+						</div>
+						<div class="menu">
+							<ul>
+								{% for title, link in  config.NAVBAR.items() %}
+									<li>
+										<a href="{{link}}">
+											{{title}}
+										</a>
+									</li>
+								{% endfor %}
+							</ul>
+						<!-- end #top-nav -->
+						</div>
+			 </div>
+</header>

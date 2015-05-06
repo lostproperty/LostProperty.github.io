@@ -1,9 +1,10 @@
 from flask import Flask
 from flask import render_template
+import settings
 app = Flask(__name__)
+app.config.from_object(settings)
 from datetime import datetime
 from functools import wraps
-from lostproperty.work import examples
 
 
 def no_sitemap(func):
@@ -16,13 +17,7 @@ def no_sitemap(func):
 
 @app.route('/')
 def index():
-    work = {w.slug: w for w in examples()}
-    return render_template('index.html', home=True, work=work)
-
-
-#@app.route('/services.html')
-def services():
-    return render_template('services.html')
+    return render_template('index.html')
 
 
 @app.route('/robots.txt')
@@ -37,25 +32,14 @@ def error_404(name=None):
     return render_template('404.html')
 
 
-#@app.route('/team.html')
-def team():
-    return render_template('team.html')
-
-
-#@app.route('/contact.html')
-def contact():
-    return render_template('contact.html')
-
-
-#@app.route('/technology.html')
-def technology():
-    return render_template('technology.html')
-
-
 @app.route('/work.html')
 def work():
-    from lostproperty.work import examples
-    return render_template('work.html', items=examples())
+    return render_template('work.html')
+
+
+@app.route('/work/<id>.html')
+def work_details(id):
+    return render_template('projects/%s.html' % id, id=id, **settings.PROJECTS[id])
 
 
 @app.route('/sitemap.xml', methods=['GET'])

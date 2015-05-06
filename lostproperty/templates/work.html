@@ -1,24 +1,31 @@
+{% set route='work' %}
 {% extends "base.html" %}
 {% block content %}
-  <div class="portfolio-intro">
-
-    <h2>Our Work</h2>
-  </div>
-   <div class="portfolio-container">
-      {% for item in items %}
-      <div>
-        <a href="{{ item.url }}">
-          <img src="{{ item.image }}">
-        </a>
-        <a href="{{ item.url }}">
-        <h3>{{ item.title }}</h3>
-        </a>
-        {% if item.description %}
-        <p>{{ item.description }}</p>
-        {% endif %}
-      </div>
-      {% endfor %}
-    </div> <!-- /container -->
-
-{% include "contact-us.html" %}
+<div class="wrapper projects">
+	<div class="container">
+		<h2>Our work</h2>
+	</div>
+	<div class="container">
+		{% for key, project in config.PROJECTS.items() %}
+			 <div class="item">
+         <a href="/work/{{key}}.html" >
+           <img src="/static/projects/{{key}}/thumb.jpg" />
+         </a>
+         <div class="caption">
+           <div class="title">
+             <a href="/work/{{key}}.html" >
+               {{project.title}}
+             </a>
+           </div>
+           <div class="client"> 
+              {% if project.client %}
+                {{ project.client }},
+              {% endif %}
+              {{project.agency}}
+           </div>
+         </div>
+			 </div>
+		{% endfor %}
+	</div>
+</div>
 {% endblock %}

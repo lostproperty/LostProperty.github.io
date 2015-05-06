@@ -1,0 +1,27 @@
+<footer class="wrapper">
+		<div class="container">
+				<div class="contact">
+            <div class="email">
+              <a href="mailto:{{config.EMAIL}}">{{config.EMAIL}}</a>
+            </div>
+            <div class="phonenumber">
+              <a href="tel:{{config.PHONENUMBER}}">{{config.PHONENUMBER}}</a>
+            </div>
+            <div class="twitter">
+              <a href="https://twitter.com/{{config.TWITTER}}">@{{config.TWITTER}}</a>
+            </div>
+				</div>
+				<div class="address">
+           {% for address in config.ADDRESS %}
+             {{ address }}<br/>
+           {% endfor %}
+				</div>
+		</div>
+</footer>
+<section class="wrapper registration">
+	<div class="container">
+					<p>Lost Property Bureau Ltd is a company
+					registered in England and Wales.
+	Registered no. 8605090. VAT Registration No 165 7973 58</p>
+	</div>
+</section>

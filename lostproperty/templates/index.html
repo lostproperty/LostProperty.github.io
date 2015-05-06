@@ -1,182 +1,47 @@
+{% set route='home' %}
 {% extends "base.html" %}
 {% block content %}
-<section class='tagline-wrapper'>
-    <div class='tagline-container'>
+<section class='tagline wrapper'>
+    <div class='container'>
         <div class='tagline'>
-            <h2>We bring our client's digital products and services to life.</h2>
+					<h1>{{config.TAGLINE}}</h1>
         </div>
     </div>
 </section>
-<section class='intro-wrapper'>
-    <div class='intro-container'>
-        <div class='who-are-we'>
-            <img src='static/images/home_code.png' alt='computer code icon'>
-            <h2>Who we are.</h2>
-            <hr/>
-            <p>
-              We are a team of veteran developers and technologists who build usable software for the web and iOS.
-            </p>
-            <p>
-              We love to build unique products that people want to use.
-            </p>
-        </div>
-
-        {#
-        <div class='collaboration'>
-            <img src='static/images/home_collaboration.png' alt='working together icon'>
-            <h2>Collaboration.</h2>
-            <hr/>
-            <p>
-               Aren't we lucky! That's right we have collaborated with some of the best in the business; providing them with technical guidance, digital product development and hosting strategy. <a target="_blank" href="mailto:hello@lostpropertyhq.com?subject=I%20want%20to%20collaborate%20with%20Lost%20Property">Contact us</a> to collaborate with you.
-            </p>
-        </div>
-        #}
-
-        <div class='build-with-care'>
-            <img src='static/images/quill.png' alt='craftmanship icon'>
-            <h2>What do we offer?</h2>
-            <hr/>
-            <p>
-            We normally help our clients in one of the following ways:
-            </p>
-            <dl>
-              <dt><h3>Design and develop new products</h3></dt>
-              <dd>This ranges from prototyping an idea to test the market (<a href="/#warblr">warblr</a>) to complete build of a proven idea (<a href="/#catinaflat">catinaflat</a>)</dd>
-
-              <dt><h3>Give a spark to an existing product</h3></dt>
-              <dd>Sometimes an existing product or site has fantastic potential
-              but needs a shot in the arm. Or perhaps your site is performing
-              well but the time is right to make some changes. We worked with
-              our friends at Razorfish to get <a href="/#allthingshair">allthingshair.com</a> ready for delivery
-              and nurture it through its first year all the while making
-              incremental improvements that ranged from improved search and internationalisation across multiple global markets
-              to developing a complete UX revamp of the admin system. </dd>
-
-              <dt><h3>Post launch</h3></dt>
-              <dd>Although sometimes overlooked, what happens after a site
-              goes live can be just as critical as the initial design and
-              build. The web is a living thing and websites often need to
-              adapt, often in subtle ways, to keep up. Whether it's tweaking
-              server infrastructure to better meet the service's demands or
-              just staying on top of security updates we ensure that everything
-              we build keeps running smoothly.</dd>
-            </dl>
+<section class='clients wrapper'>
+    <div class='container'>
+				<h3>we work with</h3>
+				<div class="logos">
+				{% for logo, link in config.LOGOS %}
+				<div class="logo">
+					<a href={{link}}>
+						<img src="/static/imgs/logos/{{logo}}" />
+					</a>
+				</div>
+				{% endfor %}
+				</div>
+        <div class="actions">
+        <a href='/work.html'>
+          <button>portfolio</button>
+        </a>
+        <div>
+    </div>
+</section>
+<section class='aboutus wrapper'>
+    <div class='container'>
+				<h3>we are lost property</h3>
+        <p>
+				Lost Property was founded with the goal of providing great engineering skills to startups, agencies and businesses.<br/>We are a company of veteran developers, technologists and problem solvers used to working closely with the client. <br/> Our team is capable of dealing with uncertainty and equipped to solve difficult problems. 
+</p>
+<p>
+We build software for the web and iOS and we love to create unique products that people love to use. We’re very good at helping both big and small companies to ship great quality products quickly or consult on existing products. We ensure that everything we are involved with keeps running smoothly. Approach us with crazy project ideas; we love challenges.
+        </p>
+        <div class="actions">
+        <a href='/about.html'>
+          <button>about us</button>
+        </a>
         </div>
     </div>
 </section>
-
-
-
-<section class='belief-wrapper'>
-    <div class='belief-container'>
-        <div class='belief'>
-          <div class="intro">
-            <img src='static/images/home_belief.png' alt='beliefs icon'>
-            <h2>Our work</h2>
-            <hr/>
-            <p>We've worked with companies ranging in size from two-person startups to multinational, FTSE 100 giants.</p>
-          </div>
-          <ul>
-            <li>
-              <h3 id="allthingshair">{{ work.allthingshair.title }}</h3>
-              <div class="example">
-                <a href="{{ work.allthingshair.url }}">
-                  <img src="{{ work.allthingshair.image}}">
-                </a>
-              </div>
-
-              <p><a href="https://www.allthingshair.com">Allthingshair.com</a>
-              is a multi-market youtube channel that features styling tips from
-              a variety of celebs and well-known fashion bloggers.
-              </p>
-              <p>We teamed up with razorfish.com to help them get
-              allthingshair.com ready for launch and since then have helped
-              guide it to meet its promise. We've added support for more
-              international markets (with new markets begin added all the time)
-              which is great for the end user and have both created new tooling
-              as well as improving the existing ones for the site's admins.
-              Sometimes it seems as if the importance of non public facing
-              portions of the site can be underestimated but Razorfish fully
-              understand the importance of a great experice from front-to-back.
-              We're very proud of everything about this site.</p>
-            </li>
-
-            <li>
-              <h3 id="catinaflat">{{ work.catinaflat.title }}</h3>
-              <div class="example">
-                <a href="{{ work.catinaflat.url }}">
-                  <img src="{{ work.catinaflat.image }}">
-                </a>
-              </div>
-              <p>
-              Our friends at <a href="https://catinaflat.com">catinaflat.com</a>
-              have a long running cat sitting business that they have carefully
-              built up over the last few years. They approached us to help them
-              create a new version of their existing site that would help put
-              cat sitters in touch with cats that need sitting.</p>
-              <p>What we love about catinaflat.com is the focus on the user.
-              They want to ensure that the person you entrust your cat to is a
-              reliable person and so they go above and beyond in thoroughly
-              interviewing and performing a background check on any potential
-              cat sitters.</p>
-            </li>
-
-            <li>
-              <h3 id="warblr">{{ work.warblr.title }}</h3>
-              <div class="example">
-                <a href="{{ work.warblr.url }}">
-                  <img src="{{ work.warblr.image }}">
-                </a>
-              </div>
-            <p>We worked with the incredibly clever team at <a href="http://warblr.net">Warblr</a> to put
-            togther the first version of their ios app. Warblr is an audio
-            recognition app for birdsong; you simply record the calls of one
-            our feathery friends on your mobile device and Warble can identify
-            the species of bird as well as provide information about that
-            species.</p>
-            </li>
-
-            <li>
-              <h3 id="seabeard">{{ work.seabeard.title }}</h3>
-              <div class="example">
-                <a href="{{ work.seabeard.url }}">
-                  <img src="{{ work.seabeard.image }}">
-                </a>
-              </div>
-              <p>Making video games has to be the glamour job of the software
-              industry and while we can't lay claim to having built any of the
-              gameplay mechanics we are very proud to have been involved in the
-              making of <a href="http://www.handcircus.com/seabeard/">Seabeard.</a></p>
-
-              <p>We've known the guys from <a href="http://www.handcircus.com">Handcircus.com</a>
-              for a while now and so when they asked if we would be available
-              to build the online backend for Seabeard we jumped at the chance.
-              This was quite a task as it involves massively multiplayer
-              gameplay and required highly performant services that worked well
-              across mobile devices with all of the vagaries of mobile
-              networks. Check out Seabeard now on the Apple appstore.</p>
-            </li>
-
-            <li>
-              <h3 id="graduate">{{ work.graduate.title }}</h3>
-              <div class="example">
-                <a href="{{ work.graduate.url }}">
-                  <img src="{{ work.graduate.image }}">
-                </a>
-              </div>
-              <p>Over at AMV BBDO they are very keen to develop the digital
-              industry's next generation of talent and part of that is their
-              graduate scheme. We built the <a href="https://graduate.amvbbdo.com/">graduate.amvbbdo.com</a>
-              site to facilitate the application process for graduates as well
-              as the reporting tools to smooth the process for those on the
-              other side of the curtain who review the applications.
-              </p>
-            </li>
-          </ul>
-        </div>
-    </div>
-</section>
-
-{% include "contact-us.html" %}
 
 {% endblock %}

@@ -1,0 +1,46 @@
+{% set route='work' %}
+{% extends "base.html" %}
+{% block content %}
+<div class="wrapper project">
+	<div class="container">
+		<h2>{{title}}</h2>
+		<button class="link">Visit Project</button>
+	</div>
+	<div class="container labels">
+		{% if client %}	
+			<div class="client">
+			  <div class="label">
+					Client
+				</div>
+				{{ client }}
+			</div>
+		{% endif %}
+		{% if agency %}	
+			<div class="agency">
+			  <div class="label">
+				  Agency	
+				</div>
+				{{ agency }}
+			</div>
+		{% endif %}
+		{% if award %}	
+			<div class="award">
+			  <div class="label">
+				  Awards	
+				</div>
+				{{ award }}
+			</div>
+		{% endif %}
+	</div>
+	<div class="container">
+		<img src="/static/projects/{{id}}/header.jpg"/>	
+	</div>
+	<div class="container summary">
+		{% block summary %}
+		{% endblock %}
+	</div>
+</div>
+{% block description %}
+{% endblock %}
+{% endblock %}
+

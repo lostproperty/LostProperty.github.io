@@ -1,0 +1,332 @@
+@import 'bourbon/bourbon';
+@import 'base/base';
+@import 'base/grid-settings';
+@import 'neat/neat';
+
+$black: #000;
+$navbar-menu-hover-color: #44bdc9;
+
+
+body, html{
+	height:100%;
+	min-width: 960px;
+  background-color: #fcfcfc;
+}
+
+body.home{
+  header.navbar {
+    background-color: transparent;
+  }
+}
+header.navbar {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+
+		.logo{
+			@include span-columns(4);
+      h1{
+        margin-top: 25px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        height: 40px;
+        width: 200px;
+        background: transparent url('/static/imgs/logo.svg') no-repeat  center center;
+        background-size: cover;
+      }
+		}
+		.menu{
+			@include span-columns(8);
+      text-align: right;
+			ul{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+				li{
+					display: inline-block;	
+          &:hover {
+            background-color: $navbar-menu-hover-color;
+          }
+          a{
+            padding: 33px 20px;
+            color: white!important;
+					display: inline-block;	
+          }
+				}
+			}
+		}
+
+}
+.container{
+	@include outer-container; 
+	h3{
+		text-transform: uppercase;
+	}
+}
+
+.grid-3{
+  .block{
+      @include span-columns(4);
+      @include omega(3n);
+      text-align: center;
+      vertical-align: middle;
+      height: 120px;
+      line-height:120px;
+      img{
+        max-height:80px; 
+        max-width:170px; 
+      }
+  }
+}
+
+.omega{
+  @include omega();
+}
+.col-1{
+  @include span-columns(1);
+}
+.col-2{
+  @include span-columns(2);
+}
+.col-3{
+  @include span-columns(3);
+}
+.col-4{
+  @include span-columns(4);
+}
+.col-5{
+  @include span-columns(5);
+}
+.col-6{
+  @include span-columns(6);
+}
+
+.wrapper  {
+	height: auto !important;
+	height: 100%;
+	width: 100%;
+  
+	&.tagline{
+
+    margin-top: -90px;
+    background: transparent url('/static/imgs/home-tagline-bg.png') no-repeat  center center;
+    background-size: cover;
+    background-color: black;
+		color: white;
+    min-height: 690px;
+		
+		h1{
+			margin-top: 190px;
+			text-align: center;
+			font-size: 50px;
+			@include span-columns(9);
+			@include shift(1.5);
+		}	
+
+	} 
+	&.aboutus{
+    h3{
+			@include span-columns(12);
+      @include omega();
+      font-size: 25px;
+    }
+    p {
+			@include span-columns(6);
+      &:nth-of-type(2){ // should not have more than 2 paragraph
+        @include omega();
+      }
+    }
+    .actions{
+			@include span-columns(12);
+      margin-top: 20px;
+    }
+    button{
+      color:white;
+      border-color: white;
+      &:hover,&:focus{
+        background-color: white;
+        color: $blue;
+        border-color: white;
+      }
+    }
+
+    padding: 145px 0;
+		background:  url('/static/imgs/home-aboutus-bg.png') no-repeat center center, linear-gradient(#2bbac6, #6695ab) ;
+    background-size: cover;
+		color: white;
+    min-height: 560px;
+	}
+	&.clients{
+    h3{
+      font-size: 25px;
+      text-align: center;
+    }
+    .logo{
+      @include span-columns(4);
+      @include omega(3n);
+      text-align: center;
+      vertical-align: middle;
+      height: 120px;
+      line-height:120px;
+      img{
+        max-height:80px; 
+        max-width:170px; 
+      }
+    }
+    padding: 65px 0;
+		background-color: #fcfcfc;
+		color: $blue;
+    min-height: 350px;
+    .actions{
+			@include span-columns(12);
+      text-align: center;
+      margin-top: 20px;
+    }
+	}
+	&.registration{
+    padding-top: 5px;
+		color: #999;
+		background-color: #222;
+    text-align: center;
+    font-size: 12px;
+	}
+  &.project{
+    min-height: 700px;
+    h2 {
+      @include span-columns(10);
+      text-transform: uppercase;
+      font-size: 25px;
+      color: #44bdc9; 
+      margin: 40px 0 40px;
+    }
+    .summary{
+      margin-top: 40px;
+      margin-bottom: 40px;
+      h3{
+        color: #44bdc9; 
+      }
+      p {
+        font-weight: bold;
+      }
+    }
+    button.link {
+      @include span-columns(2);
+      @include omega();
+      margin: 35px 0 0;
+    }
+    .labels{
+      .client, .agency, .award{
+        display:inline-block;  
+        margin-right: 20px;
+      }
+      min-height:80px; 
+      .label{
+        color: #999;
+        font-size: 14px;
+      }
+    }
+  }
+  &.projects{
+    min-height: 700px;
+    padding-bottom: 200px;
+    background-color: #fcfcfc;
+    h2 {
+       @include span-columns(12);
+       @include omega();
+      text-transform: uppercase;
+      font-size: 25px;
+      color: #44bdc9; 
+      margin: 40px 0 0;
+    }
+    .item{
+       margin-top: 40px;
+       @include span-columns(3);
+       @include omega(4n);
+       img{
+        height: 190px;
+        width: 220px;
+       }
+       .title{
+        font-size: 18px;
+        a{
+          color: #222;
+        }
+       }
+       .client{
+         color: #999;
+       }
+    
+    }   
+  }
+}
+
+body.work {
+  .tagline {
+    text-transform: uppercase;
+    font-weight: 900; 
+  }
+  .section {
+    padding: 100px 0;  
+    h3{
+      color: #bbb;
+      font-size: 25px;
+      font-weight: 900;
+    }
+    &.grey{
+      background-color: #f0f0f0;
+      h3{
+        color: #ccc;
+      }
+    }
+    &.dark{
+      background-color: #26292b;
+      color: #fcfcfc;
+      h3{
+        color: #444a4d;
+      }
+    }
+  }
+  .case-study p{
+    margin-bottom: 2em;
+     
+  }
+}
+
+footer{
+  padding: 40px 0;
+  line-height: 2;
+  background-color: #f5f5f5;
+  .contact{   
+    @include span-columns(6);
+    a{
+      text-decoration: none;
+      color: #222;
+      &:hover{
+        color: #222;
+      }
+    }
+  }
+  .address{
+    @include span-columns(6);
+    padding-left: 80px;
+    background: transparent url('/static/imgs/address.svg') no-repeat left 15px top 5px;
+  }
+  .phonenumber{
+    padding-left: 80px;
+    background: transparent url('/static/imgs/phonenumber.svg') no-repeat left 15px center;
+    margin-top: 15px;
+  }
+  .email{
+    padding-left: 80px;
+    background: transparent url('/static/imgs/email.svg') no-repeat left 15px center;
+  }
+  .twitter{
+    padding-left: 80px;
+    background: transparent url('/static/imgs/twitter.svg') no-repeat left 15px center;
+    margin-top: 15px;
+  }
+}
+
+
+

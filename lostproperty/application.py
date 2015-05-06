@@ -32,6 +32,10 @@ def error_404(name=None):
     return render_template('404.html')
 
 
+@app.route('/CNAME')
+def cname():
+    return render_template('CNAME')
+
 @app.route('/work.html')
 def work():
     return render_template('work.html')

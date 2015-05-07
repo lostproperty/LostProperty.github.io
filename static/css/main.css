@@ -426,7 +426,8 @@ header.navbar {
     text-align: center;
     font-size: 12px; }
   .wrapper.project {
-    min-height: 700px; }
+    min-height: 700px;
+    padding-bottom: 40px; }
     .wrapper.project h2 {
       float: left;
       display: block;
@@ -439,8 +440,7 @@ header.navbar {
       .wrapper.project h2:last-child {
         margin-right: 0; }
     .wrapper.project .summary {
-      margin-top: 40px;
-      margin-bottom: 40px; }
+      margin-top: 40px; }
       .wrapper.project .summary h3 {
         color: #44bdc9; }
       .wrapper.project .summary p {

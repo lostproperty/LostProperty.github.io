@@ -59,7 +59,7 @@ PROJECTS = {
         'agency': 'Razorfish',
         'tagline': "For more hair inspiration and tips",
         'link': "https://allthingshair.com",
-     #   'award': "something",
+        'award': "BIMA, Webby, Brand Republic",
     },
     'hairid': {
         'title': 'Hair ID',

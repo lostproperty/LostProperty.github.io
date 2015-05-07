@@ -19,8 +19,9 @@
            </div>
            <div class="client"> 
               {% if project.client %}
-                {{ project.client }},
+                {{ project.client }}
               {% endif %}
+              {% if project.client and project.agency%},{% endif %}
               {{project.agency}}
            </div>
          </div>

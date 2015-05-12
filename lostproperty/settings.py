@@ -31,7 +31,7 @@ NAVBAR = OrderedDict(
 )
 
 TWITTER = 'lostpropertyhq'
-EMAIL = 'help@lostpropertyhq.com'
+EMAIL = 'hello@lostpropertyhq.com'
 PHONENUMBER = '+44 20 3111 0112'
 ADDRESS = [
     'Lost Property',

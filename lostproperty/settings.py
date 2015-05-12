@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 TITLE = 'Lost Property'
-TAGLINE = "We bring our client's digital products and services to life."
+TAGLINE = "We bring our clients' digital products and services to life"
 SHORT_DESCRIPTION = 'Lost Property is a product agency with a passion for creating products that people actually want to use.'
 
 DESCRIPTION = 'Lost Property is a product agency with a passion for creating products that people actually want to use.'

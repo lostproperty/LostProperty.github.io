@@ -7,3 +7,4 @@ ENV
 /build
 /dist
 .sass-cache
+lostproperty/build/static/scss/

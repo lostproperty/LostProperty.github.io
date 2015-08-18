@@ -24,7 +24,7 @@ NAVBAR = OrderedDict(
     [
         ('Our Work', '/work.html'),
    #     ('About', '/about.html'),
-        ('Blog', 'http://blog.lostpropertyhq.com/'),
+   #     ('Blog', 'http://blog.lostpropertyhq.com/'),
         ('Twitter', 'http://twitter.com/lostpropertyhq'),
     #    ('Contact', '/contact.html'),
     ]
